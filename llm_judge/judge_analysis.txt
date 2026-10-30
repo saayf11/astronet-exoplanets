@@ -1,0 +1,37 @@
+== 3-class, n=100
+judge vs truth confusion (rows=truth PC/AFP/NTP, cols=judge):
+[[17  2  1]
+ [ 4 52  4]
+ [ 0  0 20]]
+                          pair   n  agreement  cohen_kappa
+      judge vs truth (3-class) 100       0.89        0.812
+      human vs truth (3-class) 100       0.87        0.774
+      judge vs human (3-class) 100       0.96        0.933
+   judge vs truth (planet/not) 100       0.93        0.785
+AstroNet vs truth (planet/not) 100       0.70        0.400
+judge vs AstroNet (planet/not) 100       0.69        0.380
+   human vs truth (planet/not) 100       0.91        0.713
+human vs AstroNet (planet/not) 100       0.67        0.340
+
+== fraction called 'planet' by injected type
+              judge  astronet  human
+type                                
+eb_oddeven     0.10       0.7   0.10
+eb_secondary   0.00       0.2   0.05
+grazing_eb     0.10       0.6   0.05
+none           0.00       0.0   0.00
+planet         0.85       1.0   0.75
+
+== judge errors (11):
+  id         type label judge  confidence
+J005       planet    PC   AFP           3
+J024   grazing_eb   AFP   NTP           5
+J026   grazing_eb   AFP   NTP           3
+J037   eb_oddeven   AFP    PC           4
+J044   grazing_eb   AFP    PC           2
+J047   eb_oddeven   AFP    PC           2
+J054   eb_oddeven   AFP   NTP           4
+J062 eb_secondary   AFP   NTP           3
+J082   grazing_eb   AFP    PC           2
+J084       planet    PC   AFP           3
+J100       planet    PC   NTP           3

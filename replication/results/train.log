@@ -1,0 +1,916 @@
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/train.py:129: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/train.py:129: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/train.py:131: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/tf_util/config_util.py:82: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+W0930 19:35:16.893748 140089781057344 module_wrapper.py:139] From /home/claude/exoplanet-ml/exoplanet-ml/tf_util/config_util.py:82: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+INFO:tensorflow:config: {
+  "inputs": {
+    "features": {
+      "local_view": {
+        "length": 201,
+        "is_time_series": true,
+        "subcomponents": []
+      },
+      "global_view": {
+        "length": 2001,
+        "is_time_series": true,
+        "subcomponents": []
+      }
+    },
+    "label_feature": "av_training_set",
+    "label_map": {
+      "PC": 1,
+      "AFP": 0,
+      "NTP": 0,
+      "SCR1": 0,
+      "INV": 0,
+      "INJ1": 1,
+      "INJ2": 0
+    }
+  },
+  "hparams": {
+    "output_dim": 1,
+    "num_pre_logits_hidden_layers": 4,
+    "pre_logits_hidden_layer_size": 512,
+    "pre_logits_dropout_rate": 0.0,
+    "batch_size": 256,
+    "learning_rate": 0.0002,
+    "learning_rate_decay_steps": 0,
+    "learning_rate_end_factor": 0.0,
+    "learning_rate_decay_power": 1.0,
+    "weight_decay": 0.0,
+    "label_smoothing": 0.0,
+    "optimizer": "adam",
+    "clip_gradient_norm": null,
+    "time_series_hidden": {
+      "local_view": {
+        "cnn_num_blocks": 2,
+        "cnn_block_size": 2,
+        "cnn_initial_num_filters": 16,
+        "cnn_block_filter_factor": 2,
+        "cnn_kernel_size": 5,
+        "convolution_padding": "same",
+        "pool_size": 7,
+        "pool_strides": 2
+      },
+      "global_view": {
+        "cnn_num_blocks": 5,
+        "cnn_block_size": 2,
+        "cnn_initial_num_filters": 16,
+        "cnn_block_filter_factor": 2,
+        "cnn_kernel_size": 5,
+        "convolution_padding": "same",
+        "pool_size": 5,
+        "pool_strides": 2
+      }
+    }
+  }
+}
+I0930 19:35:16.893846 140089781057344 config_util.py:82] config: {
+  "inputs": {
+    "features": {
+      "local_view": {
+        "length": 201,
+        "is_time_series": true,
+        "subcomponents": []
+      },
+      "global_view": {
+        "length": 2001,
+        "is_time_series": true,
+        "subcomponents": []
+      }
+    },
+    "label_feature": "av_training_set",
+    "label_map": {
+      "PC": 1,
+      "AFP": 0,
+      "NTP": 0,
+      "SCR1": 0,
+      "INV": 0,
+      "INJ1": 1,
+      "INJ2": 0
+    }
+  },
+  "hparams": {
+    "output_dim": 1,
+    "num_pre_logits_hidden_layers": 4,
+    "pre_logits_hidden_layer_size": 512,
+    "pre_logits_dropout_rate": 0.0,
+    "batch_size": 256,
+    "learning_rate": 0.0002,
+    "learning_rate_decay_steps": 0,
+    "learning_rate_end_factor": 0.0,
+    "learning_rate_decay_power": 1.0,
+    "weight_decay": 0.0,
+    "label_smoothing": 0.0,
+    "optimizer": "adam",
+    "clip_gradient_norm": null,
+    "time_series_hidden": {
+      "local_view": {
+        "cnn_num_blocks": 2,
+        "cnn_block_size": 2,
+        "cnn_initial_num_filters": 16,
+        "cnn_block_filter_factor": 2,
+        "cnn_kernel_size": 5,
+        "convolution_padding": "same",
+        "pool_size": 7,
+        "pool_strides": 2
+      },
+      "global_view": {
+        "cnn_num_blocks": 5,
+        "cnn_block_size": 2,
+        "cnn_initial_num_filters": 16,
+        "cnn_block_filter_factor": 2,
+        "cnn_kernel_size": 5,
+        "convolution_padding": "same",
+        "pool_size": 5,
+        "pool_strides": 2
+      }
+    }
+  }
+}
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/tf_util/config_util.py:84: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+W0930 19:35:16.894031 140089781057344 module_wrapper.py:139] From /home/claude/exoplanet-ml/exoplanet-ml/tf_util/config_util.py:84: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/tf_util/config_util.py:85: The name tf.gfile.Open is deprecated. Please use tf.io.gfile.GFile instead.
+
+W0930 19:35:16.894187 140089781057344 module_wrapper.py:139] From /home/claude/exoplanet-ml/exoplanet-ml/tf_util/config_util.py:85: The name tf.gfile.Open is deprecated. Please use tf.io.gfile.GFile instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W0930 19:35:16.894776 140089781057344 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+INFO:tensorflow:Using config: {'_model_dir': '/home/claude/runs/model', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 1, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f69154e3b50>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+I0930 19:35:17.238488 140089781057344 estimator.py:212] Using config: {'_model_dir': '/home/claude/runs/model', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 1, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f69154e3b50>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+INFO:tensorflow:No checkpoint in /home/claude/runs/model, skipping evaluation.
+I0930 19:35:17.238972 140089781057344 estimator_runner.py:47] No checkpoint in /home/claude/runs/model, skipping evaluation.
+INFO:tensorflow:Starting training at global step 0
+I0930 19:35:17.239035 140089781057344 estimator_runner.py:142] Starting training at global step 0
+WARNING:tensorflow:From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0930 19:35:17.244156 140089781057344 deprecation.py:323] From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/dataset_ops.py:171: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+W0930 19:35:17.250456 140089781057344 module_wrapper.py:139] From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/dataset_ops.py:171: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+INFO:tensorflow:Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+I0930 19:35:17.251715 140089781057344 dataset_ops.py:176] Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+WARNING:tensorflow:From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+W0930 19:35:17.522862 140089781057344 module_wrapper.py:139] From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+WARNING:tensorflow:From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+W0930 19:35:17.523896 140089781057344 module_wrapper.py:139] From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+WARNING:tensorflow:From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+W0930 19:35:17.524128 140089781057344 module_wrapper.py:139] From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+INFO:tensorflow:Calling model_fn.
+I0930 19:35:18.312424 140089781057344 estimator.py:1148] Calling model_fn.
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/astro_model/astro_model.py:303: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+W0930 19:35:18.312890 140089781057344 module_wrapper.py:139] From /home/claude/exoplanet-ml/exoplanet-ml/astronet/astro_model/astro_model.py:303: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/astro_model/astro_model.py:309: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+W0930 19:35:18.313018 140089781057344 module_wrapper.py:139] From /home/claude/exoplanet-ml/exoplanet-ml/astronet/astro_model/astro_model.py:309: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+WARNING:tensorflow:From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+W0930 19:35:18.321511 140089781057344 deprecation.py:506] From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+WARNING:tensorflow:From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/ops/nn_impl.py:183: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0930 19:35:18.629078 140089781057344 deprecation.py:323] From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/ops/nn_impl.py:183: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/astro_model/astro_model.py:293: The name tf.losses.compute_weighted_loss is deprecated. Please use tf.compat.v1.losses.compute_weighted_loss instead.
+
+W0930 19:35:18.631476 140089781057344 module_wrapper.py:139] From /home/claude/exoplanet-ml/exoplanet-ml/astronet/astro_model/astro_model.py:293: The name tf.losses.compute_weighted_loss is deprecated. Please use tf.compat.v1.losses.compute_weighted_loss instead.
+
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/astro_model/astro_model.py:296: The name tf.losses.Reduction is deprecated. Please use tf.compat.v1.losses.Reduction instead.
+
+W0930 19:35:18.631657 140089781057344 module_wrapper.py:139] From /home/claude/exoplanet-ml/exoplanet-ml/astronet/astro_model/astro_model.py:296: The name tf.losses.Reduction is deprecated. Please use tf.compat.v1.losses.Reduction instead.
+
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/training.py:92: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+W0930 19:35:18.638712 140089781057344 module_wrapper.py:139] From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/training.py:92: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+INFO:tensorflow:Done calling model_fn.
+I0930 19:35:19.231206 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+I0930 19:35:19.232525 140089781057344 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I0930 19:35:19.503390 140089781057344 monitored_session.py:240] Graph was finalized.
+2026-09-30 19:35:19.503941: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2026-09-30 19:35:19.509204: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2100000000 Hz
+2026-09-30 19:35:19.509499: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5622e87224a0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2026-09-30 19:35:19.509513: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+INFO:tensorflow:Running local_init_op.
+I0930 19:35:19.949400 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 19:35:19.971713 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 0 into /home/claude/runs/model/model.ckpt.
+I0930 19:35:20.512019 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 0 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:loss = 0.69494385, step = 1
+I0930 19:35:23.642448 140089781057344 basic_session_run_hooks.py:262] loss = 0.69494385, step = 1
+INFO:tensorflow:Saving checkpoints for 50 into /home/claude/runs/model/model.ckpt.
+I0930 19:37:07.194911 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 50 into /home/claude/runs/model/model.ckpt.
+WARNING:tensorflow:From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/training/saver.py:963: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+W0930 19:37:07.273351 140089781057344 deprecation.py:323] From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/training/saver.py:963: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+INFO:tensorflow:Loss for final step: 0.2629761.
+I0930 19:37:07.438250 140089781057344 estimator.py:371] Loss for final step: 0.2629761.
+INFO:tensorflow:Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-50
+I0930 19:37:07.439678 140089781057344 estimator_runner.py:50] Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-50
+INFO:tensorflow:Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+I0930 19:37:07.444079 140089781057344 dataset_ops.py:176] Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+INFO:tensorflow:Calling model_fn.
+I0930 19:37:07.470072 140089781057344 estimator.py:1148] Calling model_fn.
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/metrics.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+W0930 19:37:07.761859 140089781057344 module_wrapper.py:139] From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/metrics.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/metrics.py:62: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
+
+W0930 19:37:07.763468 140089781057344 module_wrapper.py:139] From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/metrics.py:62: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
+
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/metrics.py:73: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+W0930 19:37:07.769255 140089781057344 deprecation.py:323] From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/metrics.py:73: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/metrics.py:77: The name tf.metrics.mean is deprecated. Please use tf.compat.v1.metrics.mean instead.
+
+W0930 19:37:07.769976 140089781057344 module_wrapper.py:139] From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/metrics.py:77: The name tf.metrics.mean is deprecated. Please use tf.compat.v1.metrics.mean instead.
+
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/metrics.py:102: The name tf.metrics.auc is deprecated. Please use tf.compat.v1.metrics.auc instead.
+
+W0930 19:37:07.826283 140089781057344 module_wrapper.py:139] From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/metrics.py:102: The name tf.metrics.auc is deprecated. Please use tf.compat.v1.metrics.auc instead.
+
+INFO:tensorflow:Done calling model_fn.
+I0930 19:37:07.915914 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2026-09-30T19:37:07Z
+I0930 19:37:07.928027 140089781057344 evaluation.py:255] Starting evaluation at 2026-09-30T19:37:07Z
+INFO:tensorflow:Graph was finalized.
+I0930 19:37:08.008332 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-50
+I0930 19:37:08.009498 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-50
+INFO:tensorflow:Running local_init_op.
+I0930 19:37:08.098520 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 19:37:08.123496 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2026-09-30-19:37:10
+I0930 19:37:10.905039 140089781057344 evaluation.py:275] Finished evaluation at 2026-09-30-19:37:10
+INFO:tensorflow:Saving dict for global step 50: accuracy/accuracy = 0.90279543, accuracy/num_correct = 1421.0, auc = 0.9612138, confusion_matrix/label_0_pred_0 = 1127.0, confusion_matrix/label_0_pred_1 = 92.0, confusion_matrix/label_1_pred_0 = 61.0, confusion_matrix/label_1_pred_1 = 294.0, global_step = 50, loss = 0.24522261, losses/weighted_cross_entropy = 0.23857749, num_examples = 1574.0
+I0930 19:37:10.905729 140089781057344 estimator.py:2049] Saving dict for global step 50: accuracy/accuracy = 0.90279543, accuracy/num_correct = 1421.0, auc = 0.9612138, confusion_matrix/label_0_pred_0 = 1127.0, confusion_matrix/label_0_pred_1 = 92.0, confusion_matrix/label_1_pred_0 = 61.0, confusion_matrix/label_1_pred_1 = 294.0, global_step = 50, loss = 0.24522261, losses/weighted_cross_entropy = 0.23857749, num_examples = 1574.0
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 50: /home/claude/runs/model/model.ckpt-50
+I0930 19:37:10.999237 140089781057344 estimator.py:2109] Saving 'checkpoint_path' summary for global step 50: /home/claude/runs/model/model.ckpt-50
+INFO:tensorflow:Starting training at global step 50
+I0930 19:37:11.000120 140089781057344 estimator_runner.py:142] Starting training at global step 50
+INFO:tensorflow:Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+I0930 19:37:11.011377 140089781057344 dataset_ops.py:176] Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+INFO:tensorflow:Calling model_fn.
+I0930 19:37:11.060347 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 19:37:12.060714 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+I0930 19:37:12.061693 140089781057344 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I0930 19:37:12.225408 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-50
+I0930 19:37:12.227407 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-50
+WARNING:tensorflow:From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/training/saver.py:1069: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+W0930 19:37:12.415575 140089781057344 deprecation.py:323] From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/training/saver.py:1069: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+INFO:tensorflow:Running local_init_op.
+I0930 19:37:12.493973 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 19:37:12.517549 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 50 into /home/claude/runs/model/model.ckpt.
+I0930 19:37:13.106667 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 50 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:loss = 0.22858462, step = 51
+I0930 19:37:16.085501 140089781057344 basic_session_run_hooks.py:262] loss = 0.22858462, step = 51
+INFO:tensorflow:Saving checkpoints for 100 into /home/claude/runs/model/model.ckpt.
+I0930 19:39:01.517369 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 100 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.13742127.
+I0930 19:39:01.776580 140089781057344 estimator.py:371] Loss for final step: 0.13742127.
+INFO:tensorflow:Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-100
+I0930 19:39:01.779377 140089781057344 estimator_runner.py:50] Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-100
+INFO:tensorflow:Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+I0930 19:39:01.784295 140089781057344 dataset_ops.py:176] Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+INFO:tensorflow:Calling model_fn.
+I0930 19:39:01.815477 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 19:39:02.249457 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2026-09-30T19:39:02Z
+I0930 19:39:02.261875 140089781057344 evaluation.py:255] Starting evaluation at 2026-09-30T19:39:02Z
+INFO:tensorflow:Graph was finalized.
+I0930 19:39:02.344831 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-100
+I0930 19:39:02.346099 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-100
+INFO:tensorflow:Running local_init_op.
+I0930 19:39:02.440873 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 19:39:02.467463 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2026-09-30-19:39:04
+I0930 19:39:04.916818 140089781057344 evaluation.py:275] Finished evaluation at 2026-09-30-19:39:04
+INFO:tensorflow:Saving dict for global step 100: accuracy/accuracy = 0.93074965, accuracy/num_correct = 1465.0, auc = 0.9741639, confusion_matrix/label_0_pred_0 = 1129.0, confusion_matrix/label_0_pred_1 = 90.0, confusion_matrix/label_1_pred_0 = 19.0, confusion_matrix/label_1_pred_1 = 336.0, global_step = 100, loss = 0.17121002, losses/weighted_cross_entropy = 0.1743518, num_examples = 1574.0
+I0930 19:39:04.917048 140089781057344 estimator.py:2049] Saving dict for global step 100: accuracy/accuracy = 0.93074965, accuracy/num_correct = 1465.0, auc = 0.9741639, confusion_matrix/label_0_pred_0 = 1129.0, confusion_matrix/label_0_pred_1 = 90.0, confusion_matrix/label_1_pred_0 = 19.0, confusion_matrix/label_1_pred_1 = 336.0, global_step = 100, loss = 0.17121002, losses/weighted_cross_entropy = 0.1743518, num_examples = 1574.0
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 100: /home/claude/runs/model/model.ckpt-100
+I0930 19:39:04.917556 140089781057344 estimator.py:2109] Saving 'checkpoint_path' summary for global step 100: /home/claude/runs/model/model.ckpt-100
+INFO:tensorflow:Starting training at global step 100
+I0930 19:39:04.918128 140089781057344 estimator_runner.py:142] Starting training at global step 100
+INFO:tensorflow:Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+I0930 19:39:04.927628 140089781057344 dataset_ops.py:176] Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+INFO:tensorflow:Calling model_fn.
+I0930 19:39:04.968301 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 19:39:05.784602 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+I0930 19:39:05.785710 140089781057344 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I0930 19:39:06.029861 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-100
+I0930 19:39:06.031542 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-100
+INFO:tensorflow:Running local_init_op.
+I0930 19:39:06.289489 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 19:39:06.311914 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 100 into /home/claude/runs/model/model.ckpt.
+I0930 19:39:06.876838 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 100 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:loss = 0.115948334, step = 101
+I0930 19:39:10.003274 140089781057344 basic_session_run_hooks.py:262] loss = 0.115948334, step = 101
+INFO:tensorflow:Saving checkpoints for 150 into /home/claude/runs/model/model.ckpt.
+I0930 19:41:01.201635 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 150 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.11104878.
+I0930 19:41:01.432715 140089781057344 estimator.py:371] Loss for final step: 0.11104878.
+INFO:tensorflow:Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-150
+I0930 19:41:01.434230 140089781057344 estimator_runner.py:50] Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-150
+INFO:tensorflow:Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+I0930 19:41:01.438765 140089781057344 dataset_ops.py:176] Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+INFO:tensorflow:Calling model_fn.
+I0930 19:41:01.464119 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 19:41:01.961342 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2026-09-30T19:41:01Z
+I0930 19:41:01.974523 140089781057344 evaluation.py:255] Starting evaluation at 2026-09-30T19:41:01Z
+INFO:tensorflow:Graph was finalized.
+I0930 19:41:02.063968 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-150
+I0930 19:41:02.065350 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-150
+INFO:tensorflow:Running local_init_op.
+I0930 19:41:02.164294 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 19:41:02.192139 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2026-09-30-19:41:04
+I0930 19:41:04.655074 140089781057344 evaluation.py:275] Finished evaluation at 2026-09-30-19:41:04
+INFO:tensorflow:Saving dict for global step 150: accuracy/accuracy = 0.9421855, accuracy/num_correct = 1483.0, auc = 0.97782063, confusion_matrix/label_0_pred_0 = 1157.0, confusion_matrix/label_0_pred_1 = 62.0, confusion_matrix/label_1_pred_0 = 29.0, confusion_matrix/label_1_pred_1 = 326.0, global_step = 150, loss = 0.15751629, losses/weighted_cross_entropy = 0.15505067, num_examples = 1574.0
+I0930 19:41:04.655328 140089781057344 estimator.py:2049] Saving dict for global step 150: accuracy/accuracy = 0.9421855, accuracy/num_correct = 1483.0, auc = 0.97782063, confusion_matrix/label_0_pred_0 = 1157.0, confusion_matrix/label_0_pred_1 = 62.0, confusion_matrix/label_1_pred_0 = 29.0, confusion_matrix/label_1_pred_1 = 326.0, global_step = 150, loss = 0.15751629, losses/weighted_cross_entropy = 0.15505067, num_examples = 1574.0
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 150: /home/claude/runs/model/model.ckpt-150
+I0930 19:41:04.655929 140089781057344 estimator.py:2109] Saving 'checkpoint_path' summary for global step 150: /home/claude/runs/model/model.ckpt-150
+INFO:tensorflow:Starting training at global step 150
+I0930 19:41:04.656362 140089781057344 estimator_runner.py:142] Starting training at global step 150
+INFO:tensorflow:Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+I0930 19:41:04.665384 140089781057344 dataset_ops.py:176] Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+INFO:tensorflow:Calling model_fn.
+I0930 19:41:04.709193 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 19:41:05.613435 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+I0930 19:41:05.614444 140089781057344 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I0930 19:41:05.785653 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-150
+I0930 19:41:05.787388 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-150
+INFO:tensorflow:Running local_init_op.
+I0930 19:41:06.068643 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 19:41:06.092337 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 150 into /home/claude/runs/model/model.ckpt.
+I0930 19:41:06.677402 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 150 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:loss = 0.117106974, step = 151
+I0930 19:41:09.859264 140089781057344 basic_session_run_hooks.py:262] loss = 0.117106974, step = 151
+INFO:tensorflow:Saving checkpoints for 200 into /home/claude/runs/model/model.ckpt.
+I0930 19:43:37.213372 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 200 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.07552397.
+I0930 19:43:37.445623 140089781057344 estimator.py:371] Loss for final step: 0.07552397.
+INFO:tensorflow:Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-200
+I0930 19:43:37.446938 140089781057344 estimator_runner.py:50] Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-200
+INFO:tensorflow:Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+I0930 19:43:37.451958 140089781057344 dataset_ops.py:176] Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+INFO:tensorflow:Calling model_fn.
+I0930 19:43:37.479043 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 19:43:38.089413 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2026-09-30T19:43:38Z
+I0930 19:43:38.102256 140089781057344 evaluation.py:255] Starting evaluation at 2026-09-30T19:43:38Z
+INFO:tensorflow:Graph was finalized.
+I0930 19:43:38.194786 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-200
+I0930 19:43:38.196048 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-200
+INFO:tensorflow:Running local_init_op.
+I0930 19:43:38.296953 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 19:43:38.325287 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2026-09-30-19:43:41
+I0930 19:43:41.163584 140089781057344 evaluation.py:275] Finished evaluation at 2026-09-30-19:43:41
+INFO:tensorflow:Saving dict for global step 200: accuracy/accuracy = 0.9390089, accuracy/num_correct = 1478.0, auc = 0.9799768, confusion_matrix/label_0_pred_0 = 1141.0, confusion_matrix/label_0_pred_1 = 78.0, confusion_matrix/label_1_pred_0 = 18.0, confusion_matrix/label_1_pred_1 = 337.0, global_step = 200, loss = 0.15855362, losses/weighted_cross_entropy = 0.16692013, num_examples = 1574.0
+I0930 19:43:41.163956 140089781057344 estimator.py:2049] Saving dict for global step 200: accuracy/accuracy = 0.9390089, accuracy/num_correct = 1478.0, auc = 0.9799768, confusion_matrix/label_0_pred_0 = 1141.0, confusion_matrix/label_0_pred_1 = 78.0, confusion_matrix/label_1_pred_0 = 18.0, confusion_matrix/label_1_pred_1 = 337.0, global_step = 200, loss = 0.15855362, losses/weighted_cross_entropy = 0.16692013, num_examples = 1574.0
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 200: /home/claude/runs/model/model.ckpt-200
+I0930 19:43:41.164507 140089781057344 estimator.py:2109] Saving 'checkpoint_path' summary for global step 200: /home/claude/runs/model/model.ckpt-200
+INFO:tensorflow:Starting training at global step 200
+I0930 19:43:41.165062 140089781057344 estimator_runner.py:142] Starting training at global step 200
+INFO:tensorflow:Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+I0930 19:43:41.174204 140089781057344 dataset_ops.py:176] Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+INFO:tensorflow:Calling model_fn.
+I0930 19:43:41.214094 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 19:43:41.992240 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+I0930 19:43:41.993243 140089781057344 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I0930 19:43:42.140965 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-200
+I0930 19:43:42.142539 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-200
+INFO:tensorflow:Running local_init_op.
+I0930 19:43:42.397013 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 19:43:42.418211 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 200 into /home/claude/runs/model/model.ckpt.
+I0930 19:43:42.946714 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 200 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:loss = 0.14289416, step = 201
+I0930 19:43:45.857720 140089781057344 basic_session_run_hooks.py:262] loss = 0.14289416, step = 201
+INFO:tensorflow:Saving checkpoints for 250 into /home/claude/runs/model/model.ckpt.
+I0930 19:46:17.520677 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 250 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.081239276.
+I0930 19:46:17.847327 140089781057344 estimator.py:371] Loss for final step: 0.081239276.
+INFO:tensorflow:Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-250
+I0930 19:46:17.849337 140089781057344 estimator_runner.py:50] Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-250
+INFO:tensorflow:Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+I0930 19:46:17.855691 140089781057344 dataset_ops.py:176] Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+INFO:tensorflow:Calling model_fn.
+I0930 19:46:17.891952 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 19:46:18.334702 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2026-09-30T19:46:18Z
+I0930 19:46:18.348233 140089781057344 evaluation.py:255] Starting evaluation at 2026-09-30T19:46:18Z
+INFO:tensorflow:Graph was finalized.
+I0930 19:46:18.428376 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-250
+I0930 19:46:18.429496 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-250
+INFO:tensorflow:Running local_init_op.
+I0930 19:46:18.520539 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 19:46:18.546119 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2026-09-30-19:46:21
+I0930 19:46:21.178539 140089781057344 evaluation.py:275] Finished evaluation at 2026-09-30-19:46:21
+INFO:tensorflow:Saving dict for global step 250: accuracy/accuracy = 0.9301143, accuracy/num_correct = 1464.0, auc = 0.97929966, confusion_matrix/label_0_pred_0 = 1191.0, confusion_matrix/label_0_pred_1 = 28.0, confusion_matrix/label_1_pred_0 = 82.0, confusion_matrix/label_1_pred_1 = 273.0, global_step = 250, loss = 0.18668716, losses/weighted_cross_entropy = 0.1734761, num_examples = 1574.0
+I0930 19:46:21.178885 140089781057344 estimator.py:2049] Saving dict for global step 250: accuracy/accuracy = 0.9301143, accuracy/num_correct = 1464.0, auc = 0.97929966, confusion_matrix/label_0_pred_0 = 1191.0, confusion_matrix/label_0_pred_1 = 28.0, confusion_matrix/label_1_pred_0 = 82.0, confusion_matrix/label_1_pred_1 = 273.0, global_step = 250, loss = 0.18668716, losses/weighted_cross_entropy = 0.1734761, num_examples = 1574.0
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 250: /home/claude/runs/model/model.ckpt-250
+I0930 19:46:21.179564 140089781057344 estimator.py:2109] Saving 'checkpoint_path' summary for global step 250: /home/claude/runs/model/model.ckpt-250
+INFO:tensorflow:Starting training at global step 250
+I0930 19:46:21.180094 140089781057344 estimator_runner.py:142] Starting training at global step 250
+INFO:tensorflow:Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+I0930 19:46:21.189436 140089781057344 dataset_ops.py:176] Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+INFO:tensorflow:Calling model_fn.
+I0930 19:46:21.233338 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 19:46:22.188009 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+I0930 19:46:22.188991 140089781057344 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I0930 19:46:22.346144 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-250
+I0930 19:46:22.347706 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-250
+INFO:tensorflow:Running local_init_op.
+I0930 19:46:22.603992 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 19:46:22.625637 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 250 into /home/claude/runs/model/model.ckpt.
+I0930 19:46:23.179102 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 250 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:loss = 0.10793883, step = 251
+I0930 19:46:26.334892 140089781057344 basic_session_run_hooks.py:262] loss = 0.10793883, step = 251
+INFO:tensorflow:Saving checkpoints for 300 into /home/claude/runs/model/model.ckpt.
+I0930 19:48:45.446375 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 300 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.12523818.
+I0930 19:48:45.723965 140089781057344 estimator.py:371] Loss for final step: 0.12523818.
+INFO:tensorflow:Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-300
+I0930 19:48:45.727863 140089781057344 estimator_runner.py:50] Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-300
+INFO:tensorflow:Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+I0930 19:48:45.733456 140089781057344 dataset_ops.py:176] Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+INFO:tensorflow:Calling model_fn.
+I0930 19:48:45.765161 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 19:48:46.198174 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2026-09-30T19:48:46Z
+I0930 19:48:46.211087 140089781057344 evaluation.py:255] Starting evaluation at 2026-09-30T19:48:46Z
+INFO:tensorflow:Graph was finalized.
+I0930 19:48:46.293172 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-300
+I0930 19:48:46.295832 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-300
+INFO:tensorflow:Running local_init_op.
+I0930 19:48:46.402957 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 19:48:46.428559 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2026-09-30-19:48:50
+I0930 19:48:50.901379 140089781057344 evaluation.py:275] Finished evaluation at 2026-09-30-19:48:50
+INFO:tensorflow:Saving dict for global step 300: accuracy/accuracy = 0.9485388, accuracy/num_correct = 1493.0, auc = 0.98012435, confusion_matrix/label_0_pred_0 = 1173.0, confusion_matrix/label_0_pred_1 = 46.0, confusion_matrix/label_1_pred_0 = 35.0, confusion_matrix/label_1_pred_1 = 320.0, global_step = 300, loss = 0.14700887, losses/weighted_cross_entropy = 0.14361435, num_examples = 1574.0
+I0930 19:48:50.901626 140089781057344 estimator.py:2049] Saving dict for global step 300: accuracy/accuracy = 0.9485388, accuracy/num_correct = 1493.0, auc = 0.98012435, confusion_matrix/label_0_pred_0 = 1173.0, confusion_matrix/label_0_pred_1 = 46.0, confusion_matrix/label_1_pred_0 = 35.0, confusion_matrix/label_1_pred_1 = 320.0, global_step = 300, loss = 0.14700887, losses/weighted_cross_entropy = 0.14361435, num_examples = 1574.0
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 300: /home/claude/runs/model/model.ckpt-300
+I0930 19:48:50.902072 140089781057344 estimator.py:2109] Saving 'checkpoint_path' summary for global step 300: /home/claude/runs/model/model.ckpt-300
+INFO:tensorflow:Starting training at global step 300
+I0930 19:48:50.902364 140089781057344 estimator_runner.py:142] Starting training at global step 300
+INFO:tensorflow:Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+I0930 19:48:50.911739 140089781057344 dataset_ops.py:176] Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+INFO:tensorflow:Calling model_fn.
+I0930 19:48:50.950410 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 19:48:51.881302 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+I0930 19:48:51.882269 140089781057344 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I0930 19:48:52.037394 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-300
+I0930 19:48:52.039827 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-300
+INFO:tensorflow:Running local_init_op.
+I0930 19:48:52.309984 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 19:48:52.332047 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 300 into /home/claude/runs/model/model.ckpt.
+I0930 19:48:52.879641 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 300 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:loss = 0.13203983, step = 301
+I0930 19:48:57.448294 140089781057344 basic_session_run_hooks.py:262] loss = 0.13203983, step = 301
+INFO:tensorflow:Saving checkpoints for 350 into /home/claude/runs/model/model.ckpt.
+I0930 19:52:09.060263 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 350 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.06735772.
+I0930 19:52:09.321121 140089781057344 estimator.py:371] Loss for final step: 0.06735772.
+INFO:tensorflow:Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-350
+I0930 19:52:09.323849 140089781057344 estimator_runner.py:50] Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-350
+INFO:tensorflow:Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+I0930 19:52:09.331842 140089781057344 dataset_ops.py:176] Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+INFO:tensorflow:Calling model_fn.
+I0930 19:52:09.361084 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 19:52:09.788813 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2026-09-30T19:52:09Z
+I0930 19:52:09.801591 140089781057344 evaluation.py:255] Starting evaluation at 2026-09-30T19:52:09Z
+INFO:tensorflow:Graph was finalized.
+I0930 19:52:09.889114 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-350
+I0930 19:52:09.891848 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-350
+INFO:tensorflow:Running local_init_op.
+I0930 19:52:09.996407 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 19:52:10.029958 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2026-09-30-19:52:15
+I0930 19:52:15.080178 140089781057344 evaluation.py:275] Finished evaluation at 2026-09-30-19:52:15
+INFO:tensorflow:Saving dict for global step 350: accuracy/accuracy = 0.94091487, accuracy/num_correct = 1481.0, auc = 0.98086727, confusion_matrix/label_0_pred_0 = 1164.0, confusion_matrix/label_0_pred_1 = 55.0, confusion_matrix/label_1_pred_0 = 38.0, confusion_matrix/label_1_pred_1 = 317.0, global_step = 350, loss = 0.15100433, losses/weighted_cross_entropy = 0.1441267, num_examples = 1574.0
+I0930 19:52:15.080518 140089781057344 estimator.py:2049] Saving dict for global step 350: accuracy/accuracy = 0.94091487, accuracy/num_correct = 1481.0, auc = 0.98086727, confusion_matrix/label_0_pred_0 = 1164.0, confusion_matrix/label_0_pred_1 = 55.0, confusion_matrix/label_1_pred_0 = 38.0, confusion_matrix/label_1_pred_1 = 317.0, global_step = 350, loss = 0.15100433, losses/weighted_cross_entropy = 0.1441267, num_examples = 1574.0
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 350: /home/claude/runs/model/model.ckpt-350
+I0930 19:52:15.080968 140089781057344 estimator.py:2109] Saving 'checkpoint_path' summary for global step 350: /home/claude/runs/model/model.ckpt-350
+INFO:tensorflow:Starting training at global step 350
+I0930 19:52:15.081375 140089781057344 estimator_runner.py:142] Starting training at global step 350
+INFO:tensorflow:Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+I0930 19:52:15.091762 140089781057344 dataset_ops.py:176] Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+INFO:tensorflow:Calling model_fn.
+I0930 19:52:15.136467 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 19:52:16.059985 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+I0930 19:52:16.061260 140089781057344 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I0930 19:52:16.368746 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-350
+I0930 19:52:16.371769 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-350
+INFO:tensorflow:Running local_init_op.
+I0930 19:52:16.668568 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 19:52:16.692213 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 350 into /home/claude/runs/model/model.ckpt.
+I0930 19:52:17.269441 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 350 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:loss = 0.15810299, step = 351
+I0930 19:52:22.094420 140089781057344 basic_session_run_hooks.py:262] loss = 0.15810299, step = 351
+INFO:tensorflow:Saving checkpoints for 400 into /home/claude/runs/model/model.ckpt.
+I0930 19:55:28.439695 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 400 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.08165148.
+I0930 19:55:28.700434 140089781057344 estimator.py:371] Loss for final step: 0.08165148.
+INFO:tensorflow:Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-400
+I0930 19:55:28.704021 140089781057344 estimator_runner.py:50] Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-400
+INFO:tensorflow:Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+I0930 19:55:28.711763 140089781057344 dataset_ops.py:176] Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+INFO:tensorflow:Calling model_fn.
+I0930 19:55:28.739185 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 19:55:29.156286 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2026-09-30T19:55:29Z
+I0930 19:55:29.168460 140089781057344 evaluation.py:255] Starting evaluation at 2026-09-30T19:55:29Z
+INFO:tensorflow:Graph was finalized.
+I0930 19:55:29.272847 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-400
+I0930 19:55:29.275743 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-400
+INFO:tensorflow:Running local_init_op.
+I0930 19:55:29.373618 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 19:55:29.401246 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2026-09-30-19:55:33
+I0930 19:55:33.989357 140089781057344 evaluation.py:275] Finished evaluation at 2026-09-30-19:55:33
+INFO:tensorflow:Saving dict for global step 400: accuracy/accuracy = 0.9447268, accuracy/num_correct = 1487.0, auc = 0.9807577, confusion_matrix/label_0_pred_0 = 1153.0, confusion_matrix/label_0_pred_1 = 66.0, confusion_matrix/label_1_pred_0 = 21.0, confusion_matrix/label_1_pred_1 = 334.0, global_step = 400, loss = 0.15468422, losses/weighted_cross_entropy = 0.15534858, num_examples = 1574.0
+I0930 19:55:33.989700 140089781057344 estimator.py:2049] Saving dict for global step 400: accuracy/accuracy = 0.9447268, accuracy/num_correct = 1487.0, auc = 0.9807577, confusion_matrix/label_0_pred_0 = 1153.0, confusion_matrix/label_0_pred_1 = 66.0, confusion_matrix/label_1_pred_0 = 21.0, confusion_matrix/label_1_pred_1 = 334.0, global_step = 400, loss = 0.15468422, losses/weighted_cross_entropy = 0.15534858, num_examples = 1574.0
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 400: /home/claude/runs/model/model.ckpt-400
+I0930 19:55:33.990134 140089781057344 estimator.py:2109] Saving 'checkpoint_path' summary for global step 400: /home/claude/runs/model/model.ckpt-400
+INFO:tensorflow:Starting training at global step 400
+I0930 19:55:33.990593 140089781057344 estimator_runner.py:142] Starting training at global step 400
+INFO:tensorflow:Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+I0930 19:55:33.999867 140089781057344 dataset_ops.py:176] Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+INFO:tensorflow:Calling model_fn.
+I0930 19:55:34.041012 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 19:55:34.838427 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+I0930 19:55:34.839527 140089781057344 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I0930 19:55:35.035379 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-400
+I0930 19:55:35.039814 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-400
+INFO:tensorflow:Running local_init_op.
+I0930 19:55:35.311233 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 19:55:35.334820 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 400 into /home/claude/runs/model/model.ckpt.
+I0930 19:55:35.940375 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 400 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:loss = 0.15943053, step = 401
+I0930 19:55:40.749957 140089781057344 basic_session_run_hooks.py:262] loss = 0.15943053, step = 401
+INFO:tensorflow:Saving checkpoints for 450 into /home/claude/runs/model/model.ckpt.
+I0930 19:58:45.074668 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 450 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.108318634.
+I0930 19:58:45.348826 140089781057344 estimator.py:371] Loss for final step: 0.108318634.
+INFO:tensorflow:Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-450
+I0930 19:58:45.351798 140089781057344 estimator_runner.py:50] Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-450
+INFO:tensorflow:Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+I0930 19:58:45.359853 140089781057344 dataset_ops.py:176] Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+INFO:tensorflow:Calling model_fn.
+I0930 19:58:45.388232 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 19:58:45.943817 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2026-09-30T19:58:45Z
+I0930 19:58:45.956241 140089781057344 evaluation.py:255] Starting evaluation at 2026-09-30T19:58:45Z
+INFO:tensorflow:Graph was finalized.
+I0930 19:58:46.039078 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-450
+I0930 19:58:46.043814 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-450
+INFO:tensorflow:Running local_init_op.
+I0930 19:58:46.148222 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 19:58:46.174714 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2026-09-30-19:58:50
+I0930 19:58:50.810180 140089781057344 evaluation.py:275] Finished evaluation at 2026-09-30-19:58:50
+INFO:tensorflow:Saving dict for global step 450: accuracy/accuracy = 0.9440915, accuracy/num_correct = 1486.0, auc = 0.98114824, confusion_matrix/label_0_pred_0 = 1147.0, confusion_matrix/label_0_pred_1 = 72.0, confusion_matrix/label_1_pred_0 = 16.0, confusion_matrix/label_1_pred_1 = 339.0, global_step = 450, loss = 0.14834213, losses/weighted_cross_entropy = 0.15134726, num_examples = 1574.0
+I0930 19:58:50.810584 140089781057344 estimator.py:2049] Saving dict for global step 450: accuracy/accuracy = 0.9440915, accuracy/num_correct = 1486.0, auc = 0.98114824, confusion_matrix/label_0_pred_0 = 1147.0, confusion_matrix/label_0_pred_1 = 72.0, confusion_matrix/label_1_pred_0 = 16.0, confusion_matrix/label_1_pred_1 = 339.0, global_step = 450, loss = 0.14834213, losses/weighted_cross_entropy = 0.15134726, num_examples = 1574.0
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 450: /home/claude/runs/model/model.ckpt-450
+I0930 19:58:50.811035 140089781057344 estimator.py:2109] Saving 'checkpoint_path' summary for global step 450: /home/claude/runs/model/model.ckpt-450
+INFO:tensorflow:Starting training at global step 450
+I0930 19:58:50.811525 140089781057344 estimator_runner.py:142] Starting training at global step 450
+INFO:tensorflow:Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+I0930 19:58:50.823790 140089781057344 dataset_ops.py:176] Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+INFO:tensorflow:Calling model_fn.
+I0930 19:58:50.865535 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 19:58:51.710793 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+I0930 19:58:51.711815 140089781057344 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I0930 19:58:51.878745 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-450
+I0930 19:58:51.883751 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-450
+INFO:tensorflow:Running local_init_op.
+I0930 19:58:52.152493 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 19:58:52.176116 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 450 into /home/claude/runs/model/model.ckpt.
+I0930 19:58:52.724679 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 450 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:loss = 0.08845063, step = 451
+I0930 19:58:57.310092 140089781057344 basic_session_run_hooks.py:262] loss = 0.08845063, step = 451
+INFO:tensorflow:Saving checkpoints for 500 into /home/claude/runs/model/model.ckpt.
+I0930 20:02:01.693434 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 500 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.05515131.
+I0930 20:02:01.955096 140089781057344 estimator.py:371] Loss for final step: 0.05515131.
+INFO:tensorflow:Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-500
+I0930 20:02:01.959821 140089781057344 estimator_runner.py:50] Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-500
+INFO:tensorflow:Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+I0930 20:02:01.967736 140089781057344 dataset_ops.py:176] Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+INFO:tensorflow:Calling model_fn.
+I0930 20:02:01.997715 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 20:02:02.475130 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2026-09-30T20:02:02Z
+I0930 20:02:02.486296 140089781057344 evaluation.py:255] Starting evaluation at 2026-09-30T20:02:02Z
+INFO:tensorflow:Graph was finalized.
+I0930 20:02:02.569801 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-500
+I0930 20:02:02.571755 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-500
+INFO:tensorflow:Running local_init_op.
+I0930 20:02:02.667972 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 20:02:02.692683 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2026-09-30-20:02:07
+I0930 20:02:07.035262 140089781057344 evaluation.py:275] Finished evaluation at 2026-09-30-20:02:07
+INFO:tensorflow:Saving dict for global step 500: accuracy/accuracy = 0.94536215, accuracy/num_correct = 1488.0, auc = 0.9786849, confusion_matrix/label_0_pred_0 = 1169.0, confusion_matrix/label_0_pred_1 = 50.0, confusion_matrix/label_1_pred_0 = 36.0, confusion_matrix/label_1_pred_1 = 319.0, global_step = 500, loss = 0.15006804, losses/weighted_cross_entropy = 0.14426851, num_examples = 1574.0
+I0930 20:02:07.035638 140089781057344 estimator.py:2049] Saving dict for global step 500: accuracy/accuracy = 0.94536215, accuracy/num_correct = 1488.0, auc = 0.9786849, confusion_matrix/label_0_pred_0 = 1169.0, confusion_matrix/label_0_pred_1 = 50.0, confusion_matrix/label_1_pred_0 = 36.0, confusion_matrix/label_1_pred_1 = 319.0, global_step = 500, loss = 0.15006804, losses/weighted_cross_entropy = 0.14426851, num_examples = 1574.0
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 500: /home/claude/runs/model/model.ckpt-500
+I0930 20:02:07.036071 140089781057344 estimator.py:2109] Saving 'checkpoint_path' summary for global step 500: /home/claude/runs/model/model.ckpt-500
+INFO:tensorflow:Starting training at global step 500
+I0930 20:02:07.036511 140089781057344 estimator_runner.py:142] Starting training at global step 500
+INFO:tensorflow:Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+I0930 20:02:07.047515 140089781057344 dataset_ops.py:176] Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+INFO:tensorflow:Calling model_fn.
+I0930 20:02:07.085893 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 20:02:07.986794 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+I0930 20:02:07.987806 140089781057344 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I0930 20:02:08.147684 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-500
+I0930 20:02:08.149420 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-500
+INFO:tensorflow:Running local_init_op.
+I0930 20:02:08.411111 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 20:02:08.433969 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 500 into /home/claude/runs/model/model.ckpt.
+I0930 20:02:09.030359 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 500 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:loss = 0.12148554, step = 501
+I0930 20:02:13.679720 140089781057344 basic_session_run_hooks.py:262] loss = 0.12148554, step = 501
+INFO:tensorflow:Saving checkpoints for 550 into /home/claude/runs/model/model.ckpt.
+I0930 20:05:22.589975 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 550 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.08351859.
+I0930 20:05:22.835697 140089781057344 estimator.py:371] Loss for final step: 0.08351859.
+INFO:tensorflow:Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-550
+I0930 20:05:22.839898 140089781057344 estimator_runner.py:50] Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-550
+INFO:tensorflow:Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+I0930 20:05:22.847743 140089781057344 dataset_ops.py:176] Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+INFO:tensorflow:Calling model_fn.
+I0930 20:05:22.874823 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 20:05:23.269751 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2026-09-30T20:05:23Z
+I0930 20:05:23.281206 140089781057344 evaluation.py:255] Starting evaluation at 2026-09-30T20:05:23Z
+INFO:tensorflow:Graph was finalized.
+I0930 20:05:23.356720 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-550
+I0930 20:05:23.359778 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-550
+INFO:tensorflow:Running local_init_op.
+I0930 20:05:23.454014 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 20:05:23.478646 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2026-09-30-20:05:27
+I0930 20:05:27.976025 140089781057344 evaluation.py:275] Finished evaluation at 2026-09-30-20:05:27
+INFO:tensorflow:Saving dict for global step 550: accuracy/accuracy = 0.94790345, accuracy/num_correct = 1492.0, auc = 0.9806964, confusion_matrix/label_0_pred_0 = 1159.0, confusion_matrix/label_0_pred_1 = 60.0, confusion_matrix/label_1_pred_0 = 22.0, confusion_matrix/label_1_pred_1 = 333.0, global_step = 550, loss = 0.14675824, losses/weighted_cross_entropy = 0.14511384, num_examples = 1574.0
+I0930 20:05:27.976383 140089781057344 estimator.py:2049] Saving dict for global step 550: accuracy/accuracy = 0.94790345, accuracy/num_correct = 1492.0, auc = 0.9806964, confusion_matrix/label_0_pred_0 = 1159.0, confusion_matrix/label_0_pred_1 = 60.0, confusion_matrix/label_1_pred_0 = 22.0, confusion_matrix/label_1_pred_1 = 333.0, global_step = 550, loss = 0.14675824, losses/weighted_cross_entropy = 0.14511384, num_examples = 1574.0
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 550: /home/claude/runs/model/model.ckpt-550
+I0930 20:05:27.976868 140089781057344 estimator.py:2109] Saving 'checkpoint_path' summary for global step 550: /home/claude/runs/model/model.ckpt-550
+INFO:tensorflow:Starting training at global step 550
+I0930 20:05:27.977331 140089781057344 estimator_runner.py:142] Starting training at global step 550
+INFO:tensorflow:Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+I0930 20:05:28.004136 140089781057344 dataset_ops.py:176] Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+INFO:tensorflow:Calling model_fn.
+I0930 20:05:28.052334 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 20:05:29.024831 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+I0930 20:05:29.025800 140089781057344 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I0930 20:05:29.201591 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-550
+I0930 20:05:29.203727 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-550
+INFO:tensorflow:Running local_init_op.
+I0930 20:05:29.476762 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 20:05:29.499070 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 550 into /home/claude/runs/model/model.ckpt.
+I0930 20:05:30.091443 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 550 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:loss = 0.12905447, step = 551
+I0930 20:05:34.862479 140089781057344 basic_session_run_hooks.py:262] loss = 0.12905447, step = 551
+INFO:tensorflow:Saving checkpoints for 600 into /home/claude/runs/model/model.ckpt.
+I0930 20:08:42.882150 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 600 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.11783163.
+I0930 20:08:43.134999 140089781057344 estimator.py:371] Loss for final step: 0.11783163.
+INFO:tensorflow:Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-600
+I0930 20:08:43.139832 140089781057344 estimator_runner.py:50] Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-600
+INFO:tensorflow:Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+I0930 20:08:43.147728 140089781057344 dataset_ops.py:176] Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+INFO:tensorflow:Calling model_fn.
+I0930 20:08:43.177118 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 20:08:43.607054 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2026-09-30T20:08:43Z
+I0930 20:08:43.617859 140089781057344 evaluation.py:255] Starting evaluation at 2026-09-30T20:08:43Z
+INFO:tensorflow:Graph was finalized.
+I0930 20:08:43.705495 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-600
+I0930 20:08:43.707774 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-600
+INFO:tensorflow:Running local_init_op.
+I0930 20:08:43.808754 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 20:08:43.836206 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2026-09-30-20:08:48
+I0930 20:08:48.499463 140089781057344 evaluation.py:275] Finished evaluation at 2026-09-30-20:08:48
+INFO:tensorflow:Saving dict for global step 600: accuracy/accuracy = 0.94980943, accuracy/num_correct = 1495.0, auc = 0.98156536, confusion_matrix/label_0_pred_0 = 1167.0, confusion_matrix/label_0_pred_1 = 52.0, confusion_matrix/label_1_pred_0 = 27.0, confusion_matrix/label_1_pred_1 = 328.0, global_step = 600, loss = 0.14435074, losses/weighted_cross_entropy = 0.13832833, num_examples = 1574.0
+I0930 20:08:48.499808 140089781057344 estimator.py:2049] Saving dict for global step 600: accuracy/accuracy = 0.94980943, accuracy/num_correct = 1495.0, auc = 0.98156536, confusion_matrix/label_0_pred_0 = 1167.0, confusion_matrix/label_0_pred_1 = 52.0, confusion_matrix/label_1_pred_0 = 27.0, confusion_matrix/label_1_pred_1 = 328.0, global_step = 600, loss = 0.14435074, losses/weighted_cross_entropy = 0.13832833, num_examples = 1574.0
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 600: /home/claude/runs/model/model.ckpt-600
+I0930 20:08:48.500281 140089781057344 estimator.py:2109] Saving 'checkpoint_path' summary for global step 600: /home/claude/runs/model/model.ckpt-600
+INFO:tensorflow:Starting training at global step 600
+I0930 20:08:48.500748 140089781057344 estimator_runner.py:142] Starting training at global step 600
+INFO:tensorflow:Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+I0930 20:08:48.511741 140089781057344 dataset_ops.py:176] Building input pipeline from 8 files matching patterns: ['/home/claude/tfrecord/train*']
+INFO:tensorflow:Calling model_fn.
+I0930 20:08:48.554824 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 20:08:49.389643 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+I0930 20:08:49.390771 140089781057344 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I0930 20:08:49.550750 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-600
+I0930 20:08:49.555824 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-600
+INFO:tensorflow:Running local_init_op.
+I0930 20:08:49.830482 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 20:08:49.853182 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 600 into /home/claude/runs/model/model.ckpt.
+I0930 20:08:50.532720 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 600 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:loss = 0.12328069, step = 601
+I0930 20:08:55.323785 140089781057344 basic_session_run_hooks.py:262] loss = 0.12328069, step = 601
+INFO:tensorflow:Saving checkpoints for 625 into /home/claude/runs/model/model.ckpt.
+I0930 20:10:29.486740 140089781057344 basic_session_run_hooks.py:606] Saving checkpoints for 625 into /home/claude/runs/model/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.14522077.
+I0930 20:10:29.745462 140089781057344 estimator.py:371] Loss for final step: 0.14522077.
+INFO:tensorflow:Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-625
+I0930 20:10:29.747931 140089781057344 estimator_runner.py:50] Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-625
+INFO:tensorflow:Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+I0930 20:10:29.755833 140089781057344 dataset_ops.py:176] Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/val*']
+INFO:tensorflow:Calling model_fn.
+I0930 20:10:29.785571 140089781057344 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+I0930 20:10:30.197056 140089781057344 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2026-09-30T20:10:30Z
+I0930 20:10:30.209786 140089781057344 evaluation.py:255] Starting evaluation at 2026-09-30T20:10:30Z
+INFO:tensorflow:Graph was finalized.
+I0930 20:10:30.292431 140089781057344 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-625
+I0930 20:10:30.295859 140089781057344 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-625
+INFO:tensorflow:Running local_init_op.
+I0930 20:10:30.393394 140089781057344 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 20:10:30.418199 140089781057344 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2026-09-30-20:10:35
+I0930 20:10:35.075001 140089781057344 evaluation.py:275] Finished evaluation at 2026-09-30-20:10:35
+INFO:tensorflow:Saving dict for global step 625: accuracy/accuracy = 0.9447268, accuracy/num_correct = 1487.0, auc = 0.9819882, confusion_matrix/label_0_pred_0 = 1149.0, confusion_matrix/label_0_pred_1 = 70.0, confusion_matrix/label_1_pred_0 = 17.0, confusion_matrix/label_1_pred_1 = 338.0, global_step = 625, loss = 0.15294287, losses/weighted_cross_entropy = 0.15379126, num_examples = 1574.0
+I0930 20:10:35.075516 140089781057344 estimator.py:2049] Saving dict for global step 625: accuracy/accuracy = 0.9447268, accuracy/num_correct = 1487.0, auc = 0.9819882, confusion_matrix/label_0_pred_0 = 1149.0, confusion_matrix/label_0_pred_1 = 70.0, confusion_matrix/label_1_pred_0 = 17.0, confusion_matrix/label_1_pred_1 = 338.0, global_step = 625, loss = 0.15294287, losses/weighted_cross_entropy = 0.15379126, num_examples = 1574.0
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 625: /home/claude/runs/model/model.ckpt-625
+I0930 20:10:35.075957 140089781057344 estimator.py:2109] Saving 'checkpoint_path' summary for global step 625: /home/claude/runs/model/model.ckpt-625

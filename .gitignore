@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.DS_Store
+run_log.txt
+model/eval_test/
+# environment built by environment/setup_env.sh
+cpython37/
+py37/
+tf1/
+exoplanet-ml/
+# large data (see README)
+tfrecord/
+records/
+runs/
+out_v*/
+exoTrain.csv
+exoTest.csv

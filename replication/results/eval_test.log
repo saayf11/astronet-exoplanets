@@ -1,0 +1,130 @@
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/evaluate.py:95: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/evaluate.py:95: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/evaluate.py:97: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W0930 20:14:03.574932 139956573701952 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+INFO:tensorflow:Using config: {'_model_dir': '/home/claude/runs/model', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f4a118a3950>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+I0930 20:14:03.851201 139956573701952 estimator.py:212] Using config: {'_model_dir': '/home/claude/runs/model', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 600, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f4a118a3950>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1}
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/tf_util/estimator_runner.py:50: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+W0930 20:14:03.855822 139956573701952 module_wrapper.py:139] From /home/claude/exoplanet-ml/exoplanet-ml/tf_util/estimator_runner.py:50: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+INFO:tensorflow:Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-625
+I0930 20:14:03.855948 139956573701952 estimator_runner.py:50] Starting evaluation on checkpoint /home/claude/runs/model/model.ckpt-625
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/dataset_ops.py:171: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+W0930 20:14:03.859744 139956573701952 module_wrapper.py:139] From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/dataset_ops.py:171: The name tf.gfile.Glob is deprecated. Please use tf.io.gfile.glob instead.
+
+INFO:tensorflow:Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/test*']
+I0930 20:14:03.863788 139956573701952 dataset_ops.py:176] Building input pipeline from 1 files matching patterns: ['/home/claude/tfrecord/test*']
+WARNING:tensorflow:From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+W0930 20:14:04.158883 139956573701952 module_wrapper.py:139] From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+WARNING:tensorflow:From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+W0930 20:14:04.159901 139956573701952 module_wrapper.py:139] From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+WARNING:tensorflow:From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+W0930 20:14:04.160140 139956573701952 module_wrapper.py:139] From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+INFO:tensorflow:Calling model_fn.
+I0930 20:14:04.945876 139956573701952 estimator.py:1148] Calling model_fn.
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/astro_model/astro_model.py:303: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+W0930 20:14:04.946339 139956573701952 module_wrapper.py:139] From /home/claude/exoplanet-ml/exoplanet-ml/astronet/astro_model/astro_model.py:303: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+WARNING:tensorflow:From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+W0930 20:14:04.953515 139956573701952 deprecation.py:506] From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+WARNING:tensorflow:From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/ops/nn_impl.py:183: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0930 20:14:05.227944 139956573701952 deprecation.py:323] From /home/claude/tf1/lib/python3.7/site-packages/tensorflow_core/python/ops/nn_impl.py:183: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/astro_model/astro_model.py:293: The name tf.losses.compute_weighted_loss is deprecated. Please use tf.compat.v1.losses.compute_weighted_loss instead.
+
+W0930 20:14:05.230185 139956573701952 module_wrapper.py:139] From /home/claude/exoplanet-ml/exoplanet-ml/astronet/astro_model/astro_model.py:293: The name tf.losses.compute_weighted_loss is deprecated. Please use tf.compat.v1.losses.compute_weighted_loss instead.
+
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/astro_model/astro_model.py:296: The name tf.losses.Reduction is deprecated. Please use tf.compat.v1.losses.Reduction instead.
+
+W0930 20:14:05.230353 139956573701952 module_wrapper.py:139] From /home/claude/exoplanet-ml/exoplanet-ml/astronet/astro_model/astro_model.py:296: The name tf.losses.Reduction is deprecated. Please use tf.compat.v1.losses.Reduction instead.
+
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/metrics.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+W0930 20:14:05.238447 139956573701952 module_wrapper.py:139] From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/metrics.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/metrics.py:62: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
+
+W0930 20:14:05.239805 139956573701952 module_wrapper.py:139] From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/metrics.py:62: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
+
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/metrics.py:73: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+W0930 20:14:05.245193 139956573701952 deprecation.py:323] From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/metrics.py:73: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/metrics.py:77: The name tf.metrics.mean is deprecated. Please use tf.compat.v1.metrics.mean instead.
+
+W0930 20:14:05.245879 139956573701952 module_wrapper.py:139] From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/metrics.py:77: The name tf.metrics.mean is deprecated. Please use tf.compat.v1.metrics.mean instead.
+
+WARNING:tensorflow:From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/metrics.py:102: The name tf.metrics.auc is deprecated. Please use tf.compat.v1.metrics.auc instead.
+
+W0930 20:14:05.298370 139956573701952 module_wrapper.py:139] From /home/claude/exoplanet-ml/exoplanet-ml/astronet/ops/metrics.py:102: The name tf.metrics.auc is deprecated. Please use tf.compat.v1.metrics.auc instead.
+
+INFO:tensorflow:Done calling model_fn.
+I0930 20:14:05.385542 139956573701952 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2026-09-30T20:14:05Z
+I0930 20:14:05.397167 139956573701952 evaluation.py:255] Starting evaluation at 2026-09-30T20:14:05Z
+INFO:tensorflow:Graph was finalized.
+I0930 20:14:05.480560 139956573701952 monitored_session.py:240] Graph was finalized.
+2026-09-30 20:14:05.480876: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2026-09-30 20:14:05.487549: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2100000000 Hz
+2026-09-30 20:14:05.487741: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55b0d7a26e40 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2026-09-30 20:14:05.487762: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+INFO:tensorflow:Restoring parameters from /home/claude/runs/model/model.ckpt-625
+I0930 20:14:05.488818 139956573701952 saver.py:1284] Restoring parameters from /home/claude/runs/model/model.ckpt-625
+INFO:tensorflow:Running local_init_op.
+I0930 20:14:05.606048 139956573701952 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0930 20:14:05.631827 139956573701952 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2026-09-30-20:14:10
+I0930 20:14:10.490086 139956573701952 evaluation.py:275] Finished evaluation at 2026-09-30-20:14:10
+INFO:tensorflow:Saving dict for global step 625: accuracy/accuracy = 0.9631512, accuracy/num_correct = 1516.0, auc = 0.9897675, confusion_matrix/label_0_pred_0 = 1166.0, confusion_matrix/label_0_pred_1 = 48.0, confusion_matrix/label_1_pred_0 = 10.0, confusion_matrix/label_1_pred_1 = 350.0, global_step = 625, loss = 0.107967, losses/weighted_cross_entropy = 0.10911749, num_examples = 1574.0
+I0930 20:14:10.490351 139956573701952 estimator.py:2049] Saving dict for global step 625: accuracy/accuracy = 0.9631512, accuracy/num_correct = 1516.0, auc = 0.9897675, confusion_matrix/label_0_pred_0 = 1166.0, confusion_matrix/label_0_pred_1 = 48.0, confusion_matrix/label_1_pred_0 = 10.0, confusion_matrix/label_1_pred_1 = 350.0, global_step = 625, loss = 0.107967, losses/weighted_cross_entropy = 0.10911749, num_examples = 1574.0
+INFO:tensorflow:Saving 'checkpoint_path' summary for global step 625: /home/claude/runs/model/model.ckpt-625
+I0930 20:14:10.576506 139956573701952 estimator.py:2109] Saving 'checkpoint_path' summary for global step 625: /home/claude/runs/model/model.ckpt-625

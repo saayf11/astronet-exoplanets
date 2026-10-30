@@ -1,0 +1,9 @@
+pair,n,agreement,cohen_kappa
+judge vs truth (3-class),100,0.89,0.8116438356164384
+human vs truth (3-class),100,0.87,0.7743055555555556
+judge vs human (3-class),100,0.96,0.9327956989247311
+judge vs truth (planet/not),100,0.93,0.7852760736196319
+AstroNet vs truth (planet/not),100,0.7,0.4
+judge vs AstroNet (planet/not),100,0.69,0.38
+human vs truth (planet/not),100,0.91,0.713375796178344
+human vs AstroNet (planet/not),100,0.67,0.33999999999999997

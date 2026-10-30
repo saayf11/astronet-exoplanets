@@ -1,0 +1,40 @@
+== called 'planet', by type and true SNR bin
+
+[threshold rule]
+type           eb_oddeven  eb_secondary  grazing_eb  planet
+snr_bin                                                    
+(3.0, 5.0]           0.00          0.00        0.00    0.00
+(5.0, 7.1]           0.00          0.00        0.00    0.00
+(7.1, 10.0]          0.05          0.05        0.00    0.19
+(10.0, 15.0]         0.48          0.00        0.12    0.58
+(15.0, 25.0]         0.43          0.15        0.16    0.88
+(25.0, 50.0]         0.12          0.00        0.02    0.89
+(50.0, 100.0]        0.00          0.00        0.03    0.90
+
+[AstroNet]
+type           eb_oddeven  eb_secondary  grazing_eb  planet
+snr_bin                                                    
+(3.0, 5.0]           0.00          0.00        0.00    0.00
+(5.0, 7.1]           0.00          0.10        0.00    0.11
+(7.1, 10.0]          0.25          0.09        0.14    0.46
+(10.0, 15.0]         0.67          0.52        0.50    0.75
+(15.0, 25.0]         0.61          0.29        0.87    0.81
+(25.0, 50.0]         0.67          0.11        0.70    1.00
+(50.0, 100.0]        0.72          0.14        0.81    1.00
+
+NTP (no signal) called planet: threshold rule 0.000, AstroNet 0.000
+
+== AFP called 'planet', by effective dilution tercile (SNR >= 7.1 only)
+[threshold rule]
+type           eb_oddeven  eb_secondary  grazing_eb
+dil_bin                                            
+most diluted         0.24          0.06        0.00
+middle               0.12          0.05        0.06
+least diluted        0.24          0.00        0.08
+[AstroNet]
+type           eb_oddeven  eb_secondary  grazing_eb
+dil_bin                                            
+most diluted         0.57          0.24        0.35
+middle               0.62          0.19        0.57
+least diluted        0.62          0.24        0.78
+figure -> ../figures/injection_recovery_v2.png

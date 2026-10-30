@@ -1,0 +1,20 @@
+N = 1000  (PC 200, non-PC 800)
+accuracy 0.718  AUC 0.782  precision 0.382  recall 0.660
+confusion: TP 132  FN 68  FP 214  TN 586
+
+Planet recall by injected SNR (threshold 0.5):
+  SNR 5-7.1    n= 18  recall 0.11
+  SNR 7.1-15   n= 50  recall 0.60
+  SNR 15-30    n= 46  recall 0.87
+  SNR 30-60    n= 31  recall 1.00
+  SNR 60-120   n= 29  recall 1.00
+  SNR >120     n=  0  recall nan
+
+Fraction called 'planet' (p > 0.5), per signal type:
+  eb_secondary  n=200  0.175   (median p = 0.027)
+  eb_oddeven    n=200  0.430   (median p = 0.362)
+  grazing_eb    n=200  0.465   (median p = 0.442)
+  none          n=200  0.000   (median p = 0.000)
+  planet        n=200  0.660   (median p = 0.878)
+
+figure -> /home/claude/work/tmp_v2.png

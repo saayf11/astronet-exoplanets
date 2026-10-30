@@ -1,0 +1,605 @@
+{
+ "model": "rule-baseline",
+ "verdicts": [
+  {
+   "id": "J001",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J002",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J003",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J004",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J005",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J006",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J007",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J008",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J009",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J010",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J011",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J012",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J013",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J014",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J015",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J016",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J017",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J018",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J019",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J020",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J021",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J022",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J023",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J024",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J025",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J026",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J027",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J028",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J029",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J030",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J031",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J032",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J033",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J034",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J035",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J036",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J037",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J038",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J039",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J040",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J041",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J042",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J043",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J044",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J045",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J046",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J047",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J048",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J049",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J050",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J051",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J052",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J053",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J054",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J055",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J056",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J057",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J058",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J059",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J060",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J061",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J062",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J063",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J064",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J065",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J066",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J067",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J068",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J069",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J070",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J071",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J072",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J073",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J074",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J075",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J076",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J077",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J078",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J079",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J080",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J081",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J082",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J083",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J084",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J085",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J086",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J087",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J088",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J089",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J090",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J091",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J092",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J093",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J094",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J095",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J096",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J097",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J098",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J099",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  },
+  {
+   "id": "J100",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "threshold rule"
+  }
+ ]
+}

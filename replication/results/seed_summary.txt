@@ -1,0 +1,6 @@
+original  acc 0.9632 auc 0.9898 TP 350 FN 10 FP 48 TN 1166
+seed1     acc 0.9638 auc 0.9882 TP 342 FN 18 FP 39 TN 1175
+seed2     acc 0.9619 auc 0.9885 TP 346 FN 14 FP 46 TN 1168
+seed3     acc 0.9593 auc 0.9895 TP 327 FN 33 FP 31 TN 1183
+seed4     acc 0.9574 auc 0.9889 TP 323 FN 37 FP 30 TN 1184
+mean+-sd (n=5, ddof=1): acc 0.961 +- 0.003  auc 0.989 +- 0.001  auc range 0.988-0.990

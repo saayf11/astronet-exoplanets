@@ -1,0 +1,224 @@
+TCE J051
+- Period: 30.413 days; transit duration: 4.86 hours; transits observed: 24
+- Transit depth: 514 ppm; detection SNR: 34.4; noise per 29.4-min point: 229 ppm
+- Odd transits depth: 443 ppm; even transits depth: 585 ppm; odd/even difference: 4.7 sigma
+- Strongest secondary dip (phase 0.25-0.75): 33 ppm at phase 0.465, significance 2.2 sigma
+- Shape: depth in inner half of transit / depth over full transit = 1.07
+- Host star radius: 1.06 R_sun; implied companion radius if undiluted: 2.6 R_earth
+- Duration / expected central-transit duration for this star: 0.73
+
+TCE J052
+- Period: 18.095 days; transit duration: 5.07 hours; transits observed: 40
+- Transit depth: -2 ppm; detection SNR: -0.4; noise per 29.4-min point: 109 ppm
+- Odd transits depth: -4 ppm; even transits depth: 0 ppm; odd/even difference: 0.4 sigma
+- Strongest secondary dip (phase 0.25-0.75): 12 ppm at phase 0.485, significance 2.2 sigma
+- Shape: depth in inner half of transit / depth over full transit = n/a
+- Host star radius: 1.19 R_sun; implied companion radius if undiluted: 0.0 R_earth
+- Duration / expected central-transit duration for this star: 0.92
+
+TCE J053
+- Period: 43.841 days; transit duration: 5.57 hours; transits observed: 17
+- Transit depth: 13 ppm; detection SNR: 3.3; noise per 29.4-min point: 55 ppm
+- Odd transits depth: -2 ppm; even transits depth: 26 ppm; odd/even difference: 3.5 sigma
+- Strongest secondary dip (phase 0.25-0.75): 14 ppm at phase 0.515, significance 3.4 sigma
+- Shape: depth in inner half of transit / depth over full transit = 0.98
+- Host star radius: 0.93 R_sun; implied companion radius if undiluted: 0.4 R_earth
+- Duration / expected central-transit duration for this star: 0.92
+
+TCE J054
+- Period: 37.037 days; transit duration: 7.26 hours; transits observed: 20
+- Transit depth: 497 ppm; detection SNR: 4.3; noise per 29.4-min point: 1976 ppm
+- Odd transits depth: 406 ppm; even transits depth: 586 ppm; odd/even difference: 0.8 sigma
+- Strongest secondary dip (phase 0.25-0.75): 236 ppm at phase 0.740, significance 1.9 sigma
+- Shape: depth in inner half of transit / depth over full transit = 1.02
+- Host star radius: 1.21 R_sun; implied companion radius if undiluted: 2.9 R_earth
+- Duration / expected central-transit duration for this star: 0.90
+
+TCE J055
+- Period: 20.669 days; transit duration: 5.67 hours; transits observed: 35
+- Transit depth: 60 ppm; detection SNR: 7.5; noise per 29.4-min point: 159 ppm
+- Odd transits depth: 53 ppm; even transits depth: 67 ppm; odd/even difference: 0.9 sigma
+- Strongest secondary dip (phase 0.25-0.75): 39 ppm at phase 0.500, significance 4.8 sigma
+- Shape: depth in inner half of transit / depth over full transit = 1.25
+- Host star radius: 1.09 R_sun; implied companion radius if undiluted: 0.9 R_earth
+- Duration / expected central-transit duration for this star: 0.99
+
+TCE J056
+- Period: 6.400 days; transit duration: 2.21 hours; transits observed: 112
+- Transit depth: 4875 ppm; detection SNR: 56.3; noise per 29.4-min point: 1914 ppm
+- Odd transits depth: 4905 ppm; even transits depth: 4847 ppm; odd/even difference: 0.3 sigma
+- Strongest secondary dip (phase 0.25-0.75): 226 ppm at phase 0.305, significance 2.6 sigma
+- Shape: depth in inner half of transit / depth over full transit = 1.51
+- Host star radius: 0.80 R_sun; implied companion radius if undiluted: 6.1 R_earth
+- Duration / expected central-transit duration for this star: 0.74
+
+TCE J057
+- Period: 15.723 days; transit duration: 4.75 hours; transits observed: 46
+- Transit depth: -1 ppm; detection SNR: -0.1; noise per 29.4-min point: 286 ppm
+- Odd transits depth: -4 ppm; even transits depth: 2 ppm; odd/even difference: 0.2 sigma
+- Strongest secondary dip (phase 0.25-0.75): 24 ppm at phase 0.695, significance 1.7 sigma
+- Shape: depth in inner half of transit / depth over full transit = n/a
+- Host star radius: 1.11 R_sun; implied companion radius if undiluted: 0.0 R_earth
+- Duration / expected central-transit duration for this star: 0.92
+
+TCE J058
+- Period: 2.151 days; transit duration: 2.88 hours; transits observed: 337
+- Transit depth: 1533 ppm; detection SNR: 100.8; noise per 29.4-min point: 669 ppm
+- Odd transits depth: 1498 ppm; even transits depth: 1567 ppm; odd/even difference: 2.3 sigma
+- Strongest secondary dip (phase 0.25-0.75): 42 ppm at phase 0.585, significance 2.8 sigma
+- Shape: depth in inner half of transit / depth over full transit = 1.53
+- Host star radius: 1.27 R_sun; implied companion radius if undiluted: 5.4 R_earth
+- Duration / expected central-transit duration for this star: 0.91
+
+TCE J059
+- Period: 5.528 days; transit duration: 3.77 hours; transits observed: 128
+- Transit depth: -4 ppm; detection SNR: -0.3; noise per 29.4-min point: 377 ppm
+- Odd transits depth: -3 ppm; even transits depth: -5 ppm; odd/even difference: 0.1 sigma
+- Strongest secondary dip (phase 0.25-0.75): 36 ppm at phase 0.430, significance 3.0 sigma
+- Shape: depth in inner half of transit / depth over full transit = n/a
+- Host star radius: 1.20 R_sun; implied companion radius if undiluted: 0.0 R_earth
+- Duration / expected central-transit duration for this star: 0.93
+
+TCE J060
+- Period: 2.270 days; transit duration: 2.76 hours; transits observed: 319
+- Transit depth: 420 ppm; detection SNR: 17.6; noise per 29.4-min point: 998 ppm
+- Odd transits depth: 358 ppm; even transits depth: 483 ppm; odd/even difference: 2.6 sigma
+- Strongest secondary dip (phase 0.25-0.75): 55 ppm at phase 0.660, significance 2.3 sigma
+- Shape: depth in inner half of transit / depth over full transit = 1.17
+- Host star radius: 1.30 R_sun; implied companion radius if undiluted: 2.9 R_earth
+- Duration / expected central-transit duration for this star: 0.89
+
+TCE J061
+- Period: 27.216 days; transit duration: 3.71 hours; transits observed: 27
+- Transit depth: -1 ppm; detection SNR: -0.2; noise per 29.4-min point: 42 ppm
+- Odd transits depth: -2 ppm; even transits depth: 1 ppm; odd/even difference: 0.5 sigma
+- Strongest secondary dip (phase 0.25-0.75): 10 ppm at phase 0.645, significance 3.4 sigma
+- Shape: depth in inner half of transit / depth over full transit = n/a
+- Host star radius: 0.72 R_sun; implied companion radius if undiluted: 0.0 R_earth
+- Duration / expected central-transit duration for this star: 0.92
+
+TCE J062
+- Period: 2.073 days; transit duration: 2.68 hours; transits observed: 352
+- Transit depth: 296 ppm; detection SNR: 6.6; noise per 29.4-min point: 1946 ppm
+- Odd transits depth: 251 ppm; even transits depth: 341 ppm; odd/even difference: 1.0 sigma
+- Strongest secondary dip (phase 0.25-0.75): 107 ppm at phase 0.575, significance 2.4 sigma
+- Shape: depth in inner half of transit / depth over full transit = 1.57
+- Host star radius: 0.92 R_sun; implied companion radius if undiluted: 1.7 R_earth
+- Duration / expected central-transit duration for this star: 1.36
+
+TCE J063
+- Period: 1.739 days; transit duration: 3.65 hours; transits observed: 416
+- Transit depth: 1784 ppm; detection SNR: 120.1; noise per 29.4-min point: 813 ppm
+- Odd transits depth: 1798 ppm; even transits depth: 1769 ppm; odd/even difference: 1.0 sigma
+- Strongest secondary dip (phase 0.25-0.75): 1377 ppm at phase 0.500, significance 92.9 sigma
+- Shape: depth in inner half of transit / depth over full transit = 1.30
+- Host star radius: 1.25 R_sun; implied companion radius if undiluted: 5.8 R_earth
+- Duration / expected central-transit duration for this star: 1.19
+
+TCE J064
+- Period: 57.385 days; transit duration: 8.24 hours; transits observed: 13
+- Transit depth: 10658 ppm; detection SNR: 74.2; noise per 29.4-min point: 2091 ppm
+- Odd transits depth: 10519 ppm; even transits depth: 10778 ppm; odd/even difference: 0.9 sigma
+- Strongest secondary dip (phase 0.25-0.75): 435 ppm at phase 0.365, significance 3.0 sigma
+- Shape: depth in inner half of transit / depth over full transit = 1.58
+- Host star radius: 0.97 R_sun; implied companion radius if undiluted: 10.9 R_earth
+- Duration / expected central-transit duration for this star: 1.22
+
+TCE J065
+- Period: 7.000 days; transit duration: 3.06 hours; transits observed: 104
+- Transit depth: 372 ppm; detection SNR: 25.0; noise per 29.4-min point: 374 ppm
+- Odd transits depth: 371 ppm; even transits depth: 372 ppm; odd/even difference: 0.1 sigma
+- Strongest secondary dip (phase 0.25-0.75): 36 ppm at phase 0.395, significance 2.4 sigma
+- Shape: depth in inner half of transit / depth over full transit = 1.63
+- Host star radius: 1.29 R_sun; implied companion radius if undiluted: 2.7 R_earth
+- Duration / expected central-transit duration for this star: 0.74
+
+TCE J066
+- Period: 48.753 days; transit duration: 5.28 hours; transits observed: 15
+- Transit depth: 1341 ppm; detection SNR: 8.8; noise per 29.4-min point: 1891 ppm
+- Odd transits depth: 1581 ppm; even transits depth: 1138 ppm; odd/even difference: 1.5 sigma
+- Strongest secondary dip (phase 0.25-0.75): 442 ppm at phase 0.670, significance 2.8 sigma
+- Shape: depth in inner half of transit / depth over full transit = 1.16
+- Host star radius: 0.77 R_sun; implied companion radius if undiluted: 3.1 R_earth
+- Duration / expected central-transit duration for this star: 1.02
+
+TCE J067
+- Period: 46.601 days; transit duration: 4.95 hours; transits observed: 16
+- Transit depth: 1364 ppm; detection SNR: 12.2; noise per 29.4-min point: 1400 ppm
+- Odd transits depth: 1447 ppm; even transits depth: 1282 ppm; odd/even difference: 0.7 sigma
+- Strongest secondary dip (phase 0.25-0.75): 289 ppm at phase 0.340, significance 2.4 sigma
+- Shape: depth in inner half of transit / depth over full transit = 1.19
+- Host star radius: 1.04 R_sun; implied companion radius if undiluted: 4.2 R_earth
+- Duration / expected central-transit duration for this star: 0.73
+
+TCE J068
+- Period: 3.211 days; transit duration: 2.98 hours; transits observed: 225
+- Transit depth: 19314 ppm; detection SNR: 363.5; noise per 29.4-min point: 1935 ppm
+- Odd transits depth: 19417 ppm; even transits depth: 19212 ppm; odd/even difference: 1.9 sigma
+- Strongest secondary dip (phase 0.25-0.75): 120 ppm at phase 0.630, significance 2.3 sigma
+- Shape: depth in inner half of transit / depth over full transit = 1.54
+- Host star radius: 0.87 R_sun; implied companion radius if undiluted: 13.2 R_earth
+- Duration / expected central-transit duration for this star: 1.18
+
+TCE J069
+- Period: 34.928 days; transit duration: 6.00 hours; transits observed: 21
+- Transit depth: -3 ppm; detection SNR: -0.4; noise per 29.4-min point: 101 ppm
+- Odd transits depth: -15 ppm; even transits depth: 9 ppm; odd/even difference: 1.9 sigma
+- Strongest secondary dip (phase 0.25-0.75): 13 ppm at phase 0.520, significance 2.0 sigma
+- Shape: depth in inner half of transit / depth over full transit = n/a
+- Host star radius: 1.07 R_sun; implied companion radius if undiluted: 0.0 R_earth
+- Duration / expected central-transit duration for this star: 0.92
+
+TCE J070
+- Period: 9.683 days; transit duration: 3.78 hours; transits observed: 74
+- Transit depth: 189 ppm; detection SNR: 156.4; noise per 29.4-min point: 29 ppm
+- Odd transits depth: 191 ppm; even transits depth: 188 ppm; odd/even difference: 1.5 sigma
+- Strongest secondary dip (phase 0.25-0.75): 3 ppm at phase 0.470, significance 2.4 sigma
+- Shape: depth in inner half of transit / depth over full transit = 1.16
+- Host star radius: 1.30 R_sun; implied companion radius if undiluted: 1.9 R_earth
+- Duration / expected central-transit duration for this star: 0.77
+
+TCE J071
+- Period: 4.312 days; transit duration: 3.08 hours; transits observed: 168
+- Transit depth: 45818 ppm; detection SNR: 743.4; noise per 29.4-min point: 1962 ppm
+- Odd transits depth: 36459 ppm; even transits depth: 55233 ppm; odd/even difference: 152.3 sigma
+- Strongest secondary dip (phase 0.25-0.75): 154 ppm at phase 0.515, significance 2.5 sigma
+- Shape: depth in inner half of transit / depth over full transit = 1.04
+- Host star radius: 1.24 R_sun; implied companion radius if undiluted: 29.0 R_earth
+- Duration / expected central-transit duration for this star: 0.83
+
+TCE J072
+- Period: 3.846 days; transit duration: 3.84 hours; transits observed: 188
+- Transit depth: 19767 ppm; detection SNR: 371.2; noise per 29.4-min point: 2006 ppm
+- Odd transits depth: 19707 ppm; even transits depth: 19828 ppm; odd/even difference: 1.1 sigma
+- Strongest secondary dip (phase 0.25-0.75): 7340 ppm at phase 0.500, significance 138.1 sigma
+- Shape: depth in inner half of transit / depth over full transit = 1.55
+- Host star radius: 0.86 R_sun; implied companion radius if undiluted: 13.2 R_earth
+- Duration / expected central-transit duration for this star: 1.46
+
+TCE J073
+- Period: 9.145 days; transit duration: 3.60 hours; transits observed: 80
+- Transit depth: 10893 ppm; detection SNR: 133.9; noise per 29.4-min point: 1939 ppm
+- Odd transits depth: 11025 ppm; even transits depth: 10759 ppm; odd/even difference: 1.6 sigma
+- Strongest secondary dip (phase 0.25-0.75): 249 ppm at phase 0.550, significance 3.1 sigma
+- Shape: depth in inner half of transit / depth over full transit = 1.55
+- Host star radius: 0.87 R_sun; implied companion radius if undiluted: 10.0 R_earth
+- Duration / expected central-transit duration for this star: 1.02
+
+TCE J074
+- Period: 47.906 days; transit duration: 5.49 hours; transits observed: 15
+- Transit depth: 3 ppm; detection SNR: 0.6; noise per 29.4-min point: 63 ppm
+- Odd transits depth: -10 ppm; even transits depth: 14 ppm; odd/even difference: 2.4 sigma
+- Strongest secondary dip (phase 0.25-0.75): 18 ppm at phase 0.350, significance 3.6 sigma
+- Shape: depth in inner half of transit / depth over full transit = 2.14
+- Host star radius: 0.84 R_sun; implied companion radius if undiluted: 0.2 R_earth
+- Duration / expected central-transit duration for this star: 0.92
+
+TCE J075
+- Period: 37.627 days; transit duration: 7.41 hours; transits observed: 20
+- Transit depth: 160 ppm; detection SNR: 20.9; noise per 29.4-min point: 132 ppm
+- Odd transits depth: 149 ppm; even transits depth: 170 ppm; odd/even difference: 1.4 sigma
+- Strongest secondary dip (phase 0.25-0.75): 75 ppm at phase 0.500, significance 9.1 sigma
+- Shape: depth in inner half of transit / depth over full transit = 1.37
+- Host star radius: 1.25 R_sun; implied companion radius if undiluted: 1.7 R_earth
+- Duration / expected central-transit duration for this star: 1.01

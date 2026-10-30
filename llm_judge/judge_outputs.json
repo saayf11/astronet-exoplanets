@@ -1,0 +1,605 @@
+{
+ "model": "UNKNOWN (claude.ai chat)",
+ "verdicts": [
+  {
+   "id": "J001",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "Very high SNR with consistent odd/even depths, no significant secondary, a flat-bottomed shape and a duration matching the star, consistent with an undiluted hot Jupiter."
+  },
+  {
+   "id": "J002",
+   "label": "AFP",
+   "confidence": 2,
+   "reason": "Odd and even depths differ at 4.5 sigma (299 vs 1045 ppm), suggesting an eclipsing binary at twice the period, though the marginal SNR of 8.1 makes this less certain."
+  },
+  {
+   "id": "J003",
+   "label": "PC",
+   "confidence": 4,
+   "reason": "Solid SNR, consistent odd/even depths, no significant secondary and a U-shaped transit, all consistent with a sub-Neptune."
+  },
+  {
+   "id": "J004",
+   "label": "AFP",
+   "confidence": 3,
+   "reason": "Despite clean odd/even and secondary tests, the clearly V-shaped profile (1.53) at a full central-transit duration points to a blended eclipsing binary rather than a planet."
+  },
+  {
+   "id": "J005",
+   "label": "AFP",
+   "confidence": 3,
+   "reason": "A 3.9-sigma, 451-ppm secondary dip at phase 0.64 is above the noise expectation and far too deep for a planetary occultation at a 19-day period, suggesting an eccentric eclipsing binary."
+  },
+  {
+   "id": "J006",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "A huge secondary eclipse (9168 ppm, 214 sigma) at phase 0.5 plus a V-shape and long duration identify an eclipsing binary."
+  },
+  {
+   "id": "J007",
+   "label": "AFP",
+   "confidence": 2,
+   "reason": "Good SNR and clean odd/even and secondary tests, but the V-shaped profile (1.48) suggests a grazing or blended binary rather than a small planet."
+  },
+  {
+   "id": "J008",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "A strong secondary eclipse (5517 ppm, 57 sigma) at phase 0.5 identifies an eclipsing binary."
+  },
+  {
+   "id": "J009",
+   "label": "AFP",
+   "confidence": 4,
+   "reason": "A 15.6-sigma, 622-ppm secondary near phase 0.5 is far too deep for a planetary occultation, indicating an eclipsing binary."
+  },
+  {
+   "id": "J010",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "The 0.4 SNR and ~1 ppm depth with a nonsensical shape mean there is no real transit signal."
+  },
+  {
+   "id": "J011",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "High SNR, consistent odd/even depths, no secondary, a U-shape and a matching duration describe a clean sub-Neptune candidate."
+  },
+  {
+   "id": "J012",
+   "label": "AFP",
+   "confidence": 4,
+   "reason": "Odd and even depths differ at 22.7 sigma, plus a 4.1-sigma secondary near phase 0.5, indicating an eclipsing binary at twice the period."
+  },
+  {
+   "id": "J013",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "High SNR, consistent odd/even depths, no significant secondary, a U-shape and the expected duration are all consistent with a planet."
+  },
+  {
+   "id": "J014",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "A clean, flat-bottomed transit with consistent odd/even depths and no secondary is consistent with a Saturn-sized planet."
+  },
+  {
+   "id": "J015",
+   "label": "PC",
+   "confidence": 3,
+   "reason": "A clean, U-shaped Earth-sized transit with consistent odd/even depths; the 11-ppm, 3.5-sigma secondary is borderline and could be noise or an occultation."
+  },
+  {
+   "id": "J016",
+   "label": "AFP",
+   "confidence": 4,
+   "reason": "A 6-sigma secondary eclipse at phase 0.5 and a somewhat V-shaped, long-duration transit indicate an eclipsing binary."
+  },
+  {
+   "id": "J017",
+   "label": "AFP",
+   "confidence": 4,
+   "reason": "A 4.3-sigma secondary at phase 0.5, a V-shape (1.63) and an overly long duration (1.32) indicate an eclipsing binary."
+  },
+  {
+   "id": "J018",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "A massive odd/even depth difference (111 sigma) shows an eclipsing binary at twice the detected period."
+  },
+  {
+   "id": "J019",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "SNR of 1.0 and a ~7 ppm depth indicate no real transit signal."
+  },
+  {
+   "id": "J020",
+   "label": "AFP",
+   "confidence": 3,
+   "reason": "A significant 6-sigma secondary at phase 0.565 combined with a V-shaped (1.55), overly long transit suggests an eccentric eclipsing binary."
+  },
+  {
+   "id": "J021",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "Odd and even depths differ at 47 sigma, revealing an eclipsing binary at twice the period."
+  },
+  {
+   "id": "J022",
+   "label": "PC",
+   "confidence": 4,
+   "reason": "High SNR with a U-shape, no secondary and only a marginal 2.8-sigma odd/even difference, consistent with a hot Jupiter."
+  },
+  {
+   "id": "J023",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "A strong 60-sigma secondary eclipse at phase 0.5, a V-shape and a ~17.8 R_earth companion identify an eclipsing binary."
+  },
+  {
+   "id": "J024",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "SNR of 3.4 is too weak to support a real transit signal."
+  },
+  {
+   "id": "J025",
+   "label": "AFP",
+   "confidence": 4,
+   "reason": "Odd and even depths differ at 10 sigma (359 vs 607 ppm), indicating an eclipsing binary at twice the period."
+  },
+  {
+   "id": "J026",
+   "label": "NTP",
+   "confidence": 3,
+   "reason": "The detection SNR of 5.8 is below the ~7 threshold, so the signal is weak evidence of a real transit."
+  },
+  {
+   "id": "J027",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "It has a high SNR, consistent odd/even depths, no significant secondary, a U-shaped profile and a 1.5 R_earth size."
+  },
+  {
+   "id": "J028",
+   "label": "AFP",
+   "confidence": 3,
+   "reason": "The very deep transit (15.2 R_earth), V-shaped profile (1.56) and long duration ratio (1.26) suggest an eclipsing binary despite no secondary."
+  },
+  {
+   "id": "J029",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "The 12.4 sigma odd/even depth difference points to an eclipsing binary at twice the period."
+  },
+  {
+   "id": "J030",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "The SNR of 0.6 and essentially zero depth mean there is no convincing transit."
+  },
+  {
+   "id": "J031",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "There is an 11.8 sigma secondary eclipse at phase 0.500, and the transit is V-shaped and long."
+  },
+  {
+   "id": "J032",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "The 14.6 sigma odd/even depth difference indicates an eclipsing binary."
+  },
+  {
+   "id": "J033",
+   "label": "AFP",
+   "confidence": 4,
+   "reason": "There is a significant 7.0 sigma secondary eclipse at phase 0.495."
+  },
+  {
+   "id": "J034",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "A 98 sigma secondary eclipse at phase 0.5 nearly as deep as the primary, plus a V shape, makes this a clear eclipsing binary."
+  },
+  {
+   "id": "J035",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "The 24.6 sigma odd/even depth difference indicates an eclipsing binary at twice the period."
+  },
+  {
+   "id": "J036",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "There is a 32.6 sigma secondary at phase 0.5, with a V-shaped, overly long eclipse."
+  },
+  {
+   "id": "J037",
+   "label": "PC",
+   "confidence": 4,
+   "reason": "It has a solid SNR of 14, a flat-bottomed shape, consistent odd/even depths, no secondary and a 2.5 R_earth size."
+  },
+  {
+   "id": "J038",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "The negative depth and SNR mean no transit signal is present."
+  },
+  {
+   "id": "J039",
+   "label": "AFP",
+   "confidence": 2,
+   "reason": "It has a strong signal with no secondary or odd/even issue, but the clearly V-shaped profile (1.58) suggests a grazing or blended eclipsing binary."
+  },
+  {
+   "id": "J040",
+   "label": "AFP",
+   "confidence": 4,
+   "reason": "The 6.3 sigma odd/even depth difference suggests an eclipsing binary at twice the period."
+  },
+  {
+   "id": "J041",
+   "label": "AFP",
+   "confidence": 4,
+   "reason": "There is a 6.1 sigma secondary at phase 0.5, plus a V shape and long duration ratio."
+  },
+  {
+   "id": "J042",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "The near-zero depth and SNR mean there is no transit."
+  },
+  {
+   "id": "J043",
+   "label": "AFP",
+   "confidence": 2,
+   "reason": "It has a high SNR and clean odd/even and secondary tests, but the V-shaped profile (1.54) hints at a grazing or diluted eclipsing binary."
+  },
+  {
+   "id": "J044",
+   "label": "PC",
+   "confidence": 2,
+   "reason": "The SNR of 7.9 is marginal, but there is no significant odd/even difference or secondary, and the shape is U-like for an Earth-size companion."
+  },
+  {
+   "id": "J045",
+   "label": "NTP",
+   "confidence": 4,
+   "reason": "The primary SNR is only 0.6, so there is no real transit; the isolated secondary dip likely reflects variability or noise."
+  },
+  {
+   "id": "J046",
+   "label": "PC",
+   "confidence": 4,
+   "reason": "It has a strong SNR, matching odd/even depths, no significant secondary, a U-shaped profile and a 5.3 R_earth size."
+  },
+  {
+   "id": "J047",
+   "label": "PC",
+   "confidence": 2,
+   "reason": "The SNR of 7.3 is marginal but there is a flat-bottomed shape, consistent odd/even depths and no significant secondary."
+  },
+  {
+   "id": "J048",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "There is a 22.4 sigma secondary at phase 0.505, plus a V shape and overly long duration."
+  },
+  {
+   "id": "J049",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "There is an 18.9 sigma secondary eclipse at phase 0.500."
+  },
+  {
+   "id": "J050",
+   "label": "AFP",
+   "confidence": 2,
+   "reason": "It has a clean odd/even and secondary, but the clearly V-shaped profile (1.57) suggests a grazing or blended eclipsing binary."
+  },
+  {
+   "id": "J051",
+   "label": "AFP",
+   "confidence": 4,
+   "reason": "Strong signal (SNR 34) with flat-bottomed shape, but the 4.7-sigma odd/even depth difference indicates an eclipsing binary at twice the period."
+  },
+  {
+   "id": "J052",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "Negative depth and SNR of -0.4 mean there is no transit signal."
+  },
+  {
+   "id": "J053",
+   "label": "NTP",
+   "confidence": 4,
+   "reason": "SNR of 3.3 is too weak to support a real transit, so the odd/even and secondary diagnostics are not meaningful."
+  },
+  {
+   "id": "J054",
+   "label": "NTP",
+   "confidence": 4,
+   "reason": "SNR of 4.3 against very high noise (1976 ppm) gives no convincing transit."
+  },
+  {
+   "id": "J055",
+   "label": "AFP",
+   "confidence": 3,
+   "reason": "Marginal transit (SNR 7.5) with a 4.8-sigma secondary dip at exactly phase 0.5, far too deep for an Earth-sized planet, which suggests an eclipsing binary."
+  },
+  {
+   "id": "J056",
+   "label": "AFP",
+   "confidence": 3,
+   "reason": "Strong signal, but the V-shaped profile (shape ratio 1.51) and short duration ratio (0.74) point to a grazing or blended eclipsing binary."
+  },
+  {
+   "id": "J057",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "Negative depth and SNR near zero mean there is no transit signal."
+  },
+  {
+   "id": "J058",
+   "label": "AFP",
+   "confidence": 3,
+   "reason": "High-SNR signal with a clearly V-shaped profile (shape ratio 1.53), indicating an eclipsing binary despite consistent odd/even depths."
+  },
+  {
+   "id": "J059",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "Negative depth and SNR near zero mean there is no transit signal."
+  },
+  {
+   "id": "J060",
+   "label": "PC",
+   "confidence": 3,
+   "reason": "Significant (SNR 17.6) flat-bottomed transit of a 2.9 R_earth companion, with odd/even (2.6 sigma) and secondary (2.3 sigma) diagnostics below EB thresholds."
+  },
+  {
+   "id": "J061",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "Negative depth and SNR near zero mean there is no transit signal."
+  },
+  {
+   "id": "J062",
+   "label": "NTP",
+   "confidence": 3,
+   "reason": "Weak SNR of 6.6 in high noise, plus an odd V-shape and an overlong duration ratio (1.36), is not a convincing transit."
+  },
+  {
+   "id": "J063",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "A 92.9-sigma secondary eclipse at phase 0.5 clearly identifies an eclipsing binary."
+  },
+  {
+   "id": "J064",
+   "label": "AFP",
+   "confidence": 3,
+   "reason": "Deep, high-SNR signal with a V-shaped profile (shape ratio 1.58) and long duration ratio, consistent with an eclipsing binary rather than a giant planet."
+  },
+  {
+   "id": "J065",
+   "label": "AFP",
+   "confidence": 3,
+   "reason": "Strong signal, but a pronounced V-shape (shape ratio 1.63) and short duration ratio (0.74) suggest a grazing or blended eclipsing binary."
+  },
+  {
+   "id": "J066",
+   "label": "PC",
+   "confidence": 3,
+   "reason": "Moderate SNR (8.8) flat-bottomed transit of a 3.1 R_earth companion, with odd/even and secondary diagnostics within noise expectations."
+  },
+  {
+   "id": "J067",
+   "label": "PC",
+   "confidence": 4,
+   "reason": "Clean, flat-bottomed transit at SNR 12.2 for a 4.2 R_earth companion, with no significant odd/even or secondary signal."
+  },
+  {
+   "id": "J068",
+   "label": "AFP",
+   "confidence": 3,
+   "reason": "Jupiter-sized, very high-SNR signal, but the V-shaped profile (shape ratio 1.54) indicates an eclipsing binary."
+  },
+  {
+   "id": "J069",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "Negative depth and SNR near zero mean there is no transit signal."
+  },
+  {
+   "id": "J070",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "Very high-SNR, flat-bottomed transit of a 1.9 R_earth companion, with no meaningful odd/even or secondary signal."
+  },
+  {
+   "id": "J071",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "A huge 152-sigma odd/even depth difference and an implausible 29 R_earth companion identify an eclipsing binary."
+  },
+  {
+   "id": "J072",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "A 138-sigma secondary eclipse at phase 0.5 and a V-shaped profile identify an eclipsing binary."
+  },
+  {
+   "id": "J073",
+   "label": "AFP",
+   "confidence": 3,
+   "reason": "Deep, high-SNR signal with a V-shaped profile (shape ratio 1.55), consistent with an eclipsing binary."
+  },
+  {
+   "id": "J074",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "SNR of 0.6 with a 3 ppm depth means there is no real transit."
+  },
+  {
+   "id": "J075",
+   "label": "AFP",
+   "confidence": 4,
+   "reason": "Significant transit, but a 9.1-sigma secondary at phase 0.5, nearly half the primary depth, indicates an eclipsing binary."
+  },
+  {
+   "id": "J076",
+   "label": "PC",
+   "confidence": 4,
+   "reason": "Solid SNR (15.2), consistent odd/even depths, no significant secondary, flat-bottomed shape, and a plausible 2.1 R_earth companion."
+  },
+  {
+   "id": "J077",
+   "label": "AFP",
+   "confidence": 3,
+   "reason": "Despite a strong, clean odd/even signal, the shape ratio of 1.54 is clearly V-shaped and the 12.8 R_earth size suggests a grazing or blended eclipsing binary."
+  },
+  {
+   "id": "J078",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "SNR 0.1 and 1 ppm depth mean there is no transit; the 4.6-sigma off-phase dip has no accompanying primary."
+  },
+  {
+   "id": "J079",
+   "label": "PC",
+   "confidence": 4,
+   "reason": "High SNR (41.4), insignificant odd/even (1.4 sigma) and secondary (1.9 sigma), U-shaped, and a 5.6 R_earth sub-Saturn size."
+  },
+  {
+   "id": "J080",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "SNR 0.4 and 1 ppm depth show no real transit signal."
+  },
+  {
+   "id": "J081",
+   "label": "PC",
+   "confidence": 5,
+   "reason": "High SNR (63.4), matching odd/even depths, no secondary, flat-bottomed, and a 1.6 R_earth super-Earth."
+  },
+  {
+   "id": "J082",
+   "label": "PC",
+   "confidence": 2,
+   "reason": "Marginal SNR (7.9) with no significant odd/even or secondary; the high shape ratio and short duration are likely noise-driven at this SNR."
+  },
+  {
+   "id": "J083",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "SNR 0.4 and 2 ppm depth with a meaningless shape ratio indicate no transit."
+  },
+  {
+   "id": "J084",
+   "label": "AFP",
+   "confidence": 3,
+   "reason": "A 5.9-sigma secondary dip of 92 ppm (about 30% of the primary depth) is far too deep for a 2.2 R_earth planet, suggesting an eccentric or blended eclipsing binary."
+  },
+  {
+   "id": "J085",
+   "label": "PC",
+   "confidence": 2,
+   "reason": "Strong U-shaped transit with consistent odd/even depths; the 3.2-sigma secondary near phase 0.5 is only marginally above the noise expectation, so this is a tentative PC."
+  },
+  {
+   "id": "J086",
+   "label": "AFP",
+   "confidence": 3,
+   "reason": "A 4.0-sigma secondary near phase 0.52, combined with a V-shaped profile (1.50) and an overlong duration (1.18), points to an eclipsing binary."
+  },
+  {
+   "id": "J087",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "A 13.4-sigma odd/even depth difference indicates an eclipsing binary at twice the period."
+  },
+  {
+   "id": "J088",
+   "label": "AFP",
+   "confidence": 3,
+   "reason": "A 3.1-sigma odd/even difference together with a V-shaped profile (1.53) suggests an eclipsing binary."
+  },
+  {
+   "id": "J089",
+   "label": "AFP",
+   "confidence": 3,
+   "reason": "A very high-SNR signal with a clearly V-shaped profile (1.52) suggests a grazing or blended eclipsing binary, despite clean odd/even and secondary tests."
+  },
+  {
+   "id": "J090",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "A 55-sigma odd/even depth difference is a definitive eclipsing binary signature."
+  },
+  {
+   "id": "J091",
+   "label": "AFP",
+   "confidence": 4,
+   "reason": "A 7.6-sigma odd/even depth difference indicates an eclipsing binary at twice the period."
+  },
+  {
+   "id": "J092",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "A 20.1-sigma odd/even depth difference (2980 vs 9520 ppm) indicates an eclipsing binary."
+  },
+  {
+   "id": "J093",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "SNR 0.9 and 9 ppm depth indicate no convincing transit."
+  },
+  {
+   "id": "J094",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "Negative depth and SNR show no transit signal."
+  },
+  {
+   "id": "J095",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "A 61-sigma, 2496 ppm secondary eclipse exactly at phase 0.5 is a clear eclipsing binary signature."
+  },
+  {
+   "id": "J096",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "Zero depth and SNR show no transit signal."
+  },
+  {
+   "id": "J097",
+   "label": "NTP",
+   "confidence": 5,
+   "reason": "Negative depth and SNR show no transit signal."
+  },
+  {
+   "id": "J098",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "A 24-sigma odd/even depth difference indicates an eclipsing binary at twice the period."
+  },
+  {
+   "id": "J099",
+   "label": "AFP",
+   "confidence": 5,
+   "reason": "A 10.3-sigma odd/even depth difference indicates an eclipsing binary."
+  },
+  {
+   "id": "J100",
+   "label": "NTP",
+   "confidence": 3,
+   "reason": "Detection SNR of 5.4 is below the ~7 threshold, so the signal is too weak to be convincing."
+  }
+ ]
+}

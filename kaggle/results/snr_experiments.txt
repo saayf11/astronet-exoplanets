@@ -1,0 +1,16 @@
+== Official split: train 5087 stars (37 hosts) -> test 570 stars (5 hosts)
+gate threshold (BLS SNR) = 363.5; LogReg coefs [logit p, log SNR, log n_tr] = [0.34  0.705 0.658]
+  A AstroNet                       AUC 0.761  AP 0.029
+  B BLS SNR                        AUC 0.809  AP 0.085
+  C SNR-gated AstroNet             AUC 0.761  AP 0.044
+  D LogReg(AstroNet, SNR, n_tr)    AUC 0.915  AP 0.306
+  E ablation: LogReg(SNR, n_tr)    AUC 0.841  AP 0.095
+  F ablation: n_transits alone     AUC 0.726  AP 0.021
+
+== Repeated stratified 5-fold CV (10 repeats, all 5657 stars, 42 hosts; base rate 0.0074)
+  A AstroNet                       AUC 0.661 +/- 0.071   AP 0.050 +/- 0.048
+  B BLS SNR                        AUC 0.745 +/- 0.056   AP 0.031 +/- 0.024
+  C SNR-gated AstroNet             AUC 0.713 +/- 0.102   AP 0.048 +/- 0.034
+  D LogReg(AstroNet, SNR, n_tr)    AUC 0.820 +/- 0.060   AP 0.103 +/- 0.069
+  E ablation: LogReg(SNR, n_tr)    AUC 0.762 +/- 0.056   AP 0.028 +/- 0.012
+  F ablation: n_transits alone     AUC 0.647 +/- 0.073   AP 0.013 +/- 0.003
